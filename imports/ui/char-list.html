@@ -1,0 +1,285 @@
+<!-- <template name="layout1">
+  {{> Template.dynamic template=top}}
+  {{> Template.dynamic template=main}}
+</template>
+ -->
+<template name="main">
+<div class="container-fluid">
+  <header class="row">
+      <h1 class="text-center">Brimstone</h1>
+
+      <form class="form-inline">
+      <div class="form-group">
+        <input  class="form-control" id="name" type="text" name="name" placeholder="Add a new character" />
+        <select  class="form-control" id="type" type="text" name="type"> 
+         <option>Warrior</option>
+        <option>Mage</option>  
+        <option>Bowman</option>
+        <option>Theif</option>
+        <option>Darkness</option>
+        </select>
+        
+        <button class="save btn btn-default">&plus;</button>
+        </div>
+      </form>
+    </header>
+  
+      {{#each Characters}}
+        {{> charlist}}
+      {{/each}}
+  
+</div>
+</template>
+
+
+
+<template name="charlist">
+<div class="row" >
+  <dl class="col-md-8">
+<dt><h4>{{name}} lvl: {{lvl}}</h4></dt>
+<dd class="text">{{class}}</dd>
+  </dl>
+  <div class="col-md-4"> 
+<button class="edit">Edit</button>
+<button class="delete">&times;</button>
+</div>
+  </div>
+</template>
+
+
+<template name="charinfo">
+{{#with activeCharacter}}
+<div class="container">
+<button class="back" name="{{name}}">&lt;</button>
+<div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center">
+        Hero Details
+      </h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h4 class="text-center">
+        {{> editableText collection="characters" field="name"}}
+      </h4>
+    </div>
+    <div class="col-md-6">
+      <h4 class="text-center">
+        {{> editableText collection="characters" field="class"}}
+      </h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <h4 class="text-center">
+        {{> editableText collection="characters" field="keys"}}
+      </h4>
+    </div>
+    <div class="col-md-4">
+      <h4 class="text-center">
+        {{> editableText collection="characters" field="lvl"}}
+      </h4>
+    </div>
+  </div>
+  
+<div class="row">
+<div class="col-md-12">
+    <table class="table table-bordered table-condensed text-center">
+  <thead>
+    <tr >
+      <th class="text-center">Stats</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr class="active">
+      <td class="text-center">agility</td>
+      <td class="text-center">cunning</td>
+      <td class="text-center">spirit</td>
+      <td class="text-center">maxGrit</td>
+  </tr>
+    <tr >
+      <td class="agility-cell">{{> editableText collection="characters" field="agility"}}</td>
+      <td class="cunning-cell">{{> editableText collection="characters" field="cunning"}}</td>
+      <td class="spirit-cell">{{> editableText collection="characters" field="spirit"}}</td>
+      <td class="maxGrit-cell">{{> editableText collection="characters" field="maxGrit"}}</td>
+    </tr>
+    <tr class="active"> 
+      <td class="agility-cell">strength</td>
+      <td class="cunning-cell">lore</td>
+      <td class="spirit-cell">luck</td>
+      <td class="maxGrit-cell">initiative</td>
+    </tr>
+    <tr>
+      <td class="agility-cell">{{> editableText collection="characters" field="strength"}}</td>
+      <td class="cunning-cell">{{> editableText collection="characters" field="lore"}}</td>
+      <td class="spirit-cell">{{> editableText collection="characters" field="luck"}}</td>
+      <td class="maxGrit-cell">{{> editableText collection="characters" field="initiative"}}</td>
+    </tr>
+    <tr class="active">
+      <td class="agility-cell">health</td>
+      <td class="cunning-cell">sanity</td>
+      <td class="spirit-cell">melee</td>
+      <td class="maxGrit-cell">corruption</td>
+    </tr>
+    <tr>
+      <td class="agility-cell">{{> editableText collection="characters" field="health"}}</td>
+      <td class="cunning-cell">{{> editableText collection="characters" field="sanity"}}</td>
+      <td class="spirit-cell">{{> editableText collection="characters" field="melee"}}</td>
+      <td class="maxGrit-cell">{{> editableText collection="characters" field="corruption"}}</td>
+    </tr>
+    <tr class="active">
+      <td class="agility-cell">defense</td>
+      <td class="cunning-cell">willpower</td>
+      <td class="spirit-cell">combat</td>
+      <td class="maxGrit-cell">darkStone</td>
+    </tr>
+    <tr>
+      <td class="agility-cell">{{> editableText collection="characters" field="defense"}}</td>
+      <td class="cunning-cell">{{> editableText collection="characters" field="willpower"}}</td>
+      <td class="spirit-cell">{{> editableText collection="characters" field="combat"}}</td>
+      <td class="maxGrit-cell">{{> editableText collection="characters" field="darkStone"}}</td>
+    </tr>
+    <tr class="active">
+      <td class="agility-cell">armor</td>
+      <td class="cunning-cell">Sarmor</td>
+      <td class="spirit-cell">range</td>
+      <td class="maxGrit-cell">maxWeight</td>
+    </tr>
+    <tr>
+      <td class="agility-cell">{{> editableText collection="characters" field="armor"}}</td>
+      <td class="cunning-cell">{{> editableText collection="characters" field="Sarmor"}}</td>
+      <td class="spirit-cell">{{> editableText collection="characters" field="range"}}</td>
+      <td class="maxGrit-cell">{{> editableText collection="characters" field="maxWeight"}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+  <div class="hero-extras">
+    <div class="sub-container">
+      <div class="gold">
+        <div class="label">gold:</div>
+        <div class="value">{{> editableText collection="characters" field="gold"}}</div>
+      </div>
+      <div class="exp">
+        <div class="label">exp:</div>
+        <div class="value">{{> editableText collection="characters" field="exp"}}</div>
+      </div>
+    </div>
+    <div class="sub-container">
+      <div class="move">
+        <div class="label"></div>
+        <div class="value"></div>
+        <button class="inc-button">&plus;</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{/with}}
+{{> nav}}
+</template>
+
+
+<template name="inventoryitem">
+
+<li class="item">
+<span class="text">Name: {{> editableText collection="inventory" field="name"}}</span>
+<p>
+
+<span class="text">Key Words: {{> editableText collection="inventory" field="keys"}}</span>
+<span class="text">Upgrade Slots: {{> editableText collection="inventory" field="upgradeSlots"}}</span>
+
+<span class="text">Weight: {{> editableText collection="inventory" field="weight"}}</span>
+
+<span class="text">Value: {{> editableText collection="inventory" field="value"}}</span>
+</p>
+<p class="text">Description: {{> editableText collection="inventory" field="desc"}}</p>
+<button class="edit">EDIT</button>
+<button class="delete">&times;</button>
+</li>
+</template>
+
+<template name="nav">
+  <div class="row">
+  <div class="col-md-12">
+  <a href="/Details" class="btn btn-default" role="button">Details</a>
+  <a href="/Equipment" class="btn btn-default" role="button">Equip</a>
+  <a href="/Sidebag" class="btn btn-default" role="button">Sidebag</a>
+  <!-- <a href="/Extras" class="btn btn-default" role="button">extras</a>
+  <a href="/Effects" class="btn btn-default" role="button">effects</a>
+  <a href="/Abilities" class="btn btn-default" role="button">Abilities</a> -->
+  </div>
+</div>
+</template>
+
+
+<template name="Equipment">
+
+{{#with inventory}}
+<dir class="inventoryView">
+    <h3>Inventory <button class=" btn btn-default newitem">&plus; New Item</button></h3>
+
+      <ul>
+          {{#each inventory}}
+          {{> inventoryitem}}
+          {{/each}}
+      </ul>
+    </dir>
+    {{/with}}
+    {{#with itemWeight}}
+    <p id="weight">Total Weight: {{itemWeight}}</p>
+    {{/with}}
+  {{> nav}}
+</template>
+
+<template name="sidebag">
+
+{{#with inventory}}
+<dir class="container">
+    <h3>Sidebag <button class="btn btn-default newitem">&plus; New Item</button></h3>
+
+      <ul>
+          {{#each inventory}}
+          {{> sidebagItem}}
+          {{/each}}
+      </ul>
+    </dir>
+    {{/with}}
+  {{> nav}}
+</template>
+
+<template name="sidebagItem">
+<div class="row">
+<div class="col-md-6">
+<dl>
+<dt class="text">{{name}} <span> ct: {{count}}</span></dt>
+  <dd >{{desc}}</dd>
+</dl>
+</div>
+<div class="col-md-4">
+<button class=" btn delete">&times;</button>
+</div>
+</div>
+
+</template>
+
+
+<template name="sidebagdesc">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<h3> Item Details</h3>
+<dl>
+<dt class="text">{{> editableText collection="sidebag" field="name"}} <span> ct: {{> editableText collection="sidebag" field="sideItem.count"}}</span>
+</dt>
+  <dd> Description: {{> editableText collection="sidebag" field="sideItem.desc"}}</dd>
+</dl>
+</div>
+<div class="col-md-4">
+<button class=" btn done">Done</button>
+</div>
+</div>
+</div>
+</template>
