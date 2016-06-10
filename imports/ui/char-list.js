@@ -3,6 +3,7 @@ import { Characters } from '../api/brimChar.js';
 import { inventorydb } from '../api/brimChar.js';
 import { sidebagdb } from '../api/brimChar.js';
 import { extrasdb } from '../api/brimChar.js';
+import { slotsdb } from '../api/brimChar.js';
  
 import './char-list.html';
 
@@ -338,18 +339,22 @@ Template.equipmentdesc.helpers({
 
    },
 
+   slotItem() {
+var item = slotsdb.find({owner: this._id});
+    return item;
+
+   },
+
 });
 
 Template.equipmentdesc.events({
-  // 'click .newitem'(){
-
-  //     var itemName = prompt("item name?");
-  //     var count = prompt("How many of " + itemName + " are there ?");
-  //     var desc = prompt("Describe " + itemName + ":");
-  //     var itemres = basicSideBag(this._id,itemName,"sidebag",count,desc);
-  //     sidebagdb.insert(itemres,{
-  //     });
-  //   },
+  'click .newitem'(){
+      var itemName = prompt("Name?");
+      var slots = prompt("How many slots does " + itemName + " cost?");
+      var itemres = slotMake(this._id,itemName,slots);
+      slotsdb.insert(itemres,{
+      });
+    },
 
   'click .done'(){
 
@@ -360,7 +365,55 @@ Template.equipmentdesc.events({
     FlowRouter.go('/Equipment');
     },
 
+     'click .sideitem'(){
+
+    slotsdb.update(this._id,{
+      $set: {activeSlot: true},
+    });
+    FlowRouter.go('/EquipmentSlot');
+  },
+
 });
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                slotdesc Helpers and Events
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Template.slotdesc.helpers({
+
+   active() {
+    var output;
+  var cursor = slotsdb.find({activeSlot: true});
+  output = cursor.fetch();
+  //alert(output[0].name);
+  return output[0];
+
+   },
+
+});
+
+Template.slotdesc.events({
+
+     
+
+  'click .done'(){
+
+    slotsdb.update(this._id,{
+      $set: {activeSlot: false},
+    });
+
+    FlowRouter.go('/EquipmentItem');
+    },
+
+    'click .delete'(){
+    slotsdb.remove(this._id);
+    FlowRouter.go('/EquipmentItem');
+    },
+
+});
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                Classes and Functions
@@ -401,6 +454,7 @@ function person(name, type) {
 }
 
 function basicInv(owner,name,slots,weight,val,desc)  {
+
    var item = {
     "owner": owner,
     "name": name,
@@ -454,9 +508,29 @@ function activeCharacter2(){
   return output;
    };
 
+function activeItem(){
+  var output;
+  var cursor = slotsdb.find({activeSlot: true});
+  output = cursor.fetch();
+  return output[0];
+   };
+
 function activeSideBag(){
   var output;
   var cursor = sidebagdb.find({activeSideBag: true});
   output = cursor.fetch();
   return output;
+   };
+
+   function slotMake(owner,name,slots) {
+
+    var item = {
+    "owner": owner,
+    "name": name,
+    "slots": slots,
+    "desc": "Default Description",
+    "activeSlot": false,
+  }
+  return item;
+
    };
