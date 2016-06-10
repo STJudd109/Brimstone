@@ -274,12 +274,14 @@
 {{#with inventory}}
 <div class="vertical-center">
 <div class="filler-inv"></div>
+    <div class="text-center">
       <ul>
           {{#each inventory}}
           {{> sidebagItem}}
           {{/each}}
       </ul>
     </div>
+</div>
 {{/with}}
   {{> nav}}
 </template>
@@ -293,7 +295,7 @@
 </dl>
 </div>
 <div class="col-xs-4">
-<button class=" btn delete">&times;</button>
+<button class=" btn btn-default delete">&times;</button>
 </div>
 </div>
 
@@ -357,15 +359,58 @@
   <dd> Description: {{> editableText collection="inventory" field="desc"}}</dd>
 </dl>
 </div>
+<button class=" btn newitem">add slot</button>
 </div>
-<button class=" btn done">Done</button>
 </div>
 <div class="container subitem">
-  
+<ul>
+  {{#each slotItem}}
+<li class="sideitem">
+<dl>
+  <dt><h4>{{name}}</h4></dt>
+  <dd >Costs {{slots}} slot</dd>
+  </dl>
+</li>
+{{/each}}
+</ul>
+</div>
+<button class=" btn done navbar-fixed-bottom">Done</button>
+</div>
+{{/with}}
+</template>
 
+
+
+
+<template name="slotdesc">
+{{#with active}}
+<nav class="navbar-default navbar-fixed-top">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-12">
+      <h3 class="text-center">
+        Item Details
+      </h3>
+    </div>
+  </div>
+</div>
+</nav>
+<div class="vertical-center ">
+<div class="container">
+<div class="filler"></div>
+<div class="row text-center">
+<div class="col-xs-12">
+<dl>
+<dt class="text"><h3>{{> editableText collection="slots" field="name"}}</h3> <span> ct: {{> editableText collection="slots" field="slots"}}</span>
+</dt>
+  <dd> Description: {{> editableText collection="slots" field="desc"}}</dd>
+</dl>
 </div>
 </div>
-
+<button class=" btn done">Done</button>
+<button class=" btn delete pull-right">Delete</button>
+</div>
+</div>
 {{/with}}
 </template>
 
@@ -384,3 +429,5 @@
   </div>
 </nav>
 </template>
+
+
