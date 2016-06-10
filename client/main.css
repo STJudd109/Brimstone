@@ -1,9 +1,47 @@
 /* CSS declarations go here */
-nav  {
-	width: 100%;
+@media (max-width: @screen-xs-max) {}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {}
+@media (min-width: @screen-lg-min) {}
 
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+@grid-float-breakpoint:     768px;
+
+html, body {
+
+height: 100%;
 }
 
-html,body{
-    height: 100%
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: block;
+  align-items: center;
+  position: relative;
+}
+.vertical-center2 {
+min-height: 100%;  
+  min-height: 100vh; 
+ 	display: flex;
+}
+
+.filler {
+	height:50px;
+	width:100%;
+}
+
+.filler-inv {
+	height:100px;
+	width:100%;
+}
+
+.subitem {
+	border: solid black 1px;
+	width: 75%;
+}
+
+.save {
+	height: 50px;
 }

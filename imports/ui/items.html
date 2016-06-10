@@ -1,0 +1,45 @@
+
+
+<!--  _____________________________________________INVENTORY ITEM__________________________ -->
+
+
+<template name="inventoryitem">
+
+<dl class="item sideitem dl-horizontal" >
+<dt class="text "><h4>{{name}}</h4></dt>
+
+<dd><span class="text">{{keys}}</span></dd>
+
+<dd class="text">
+
+<span class="text">Upgrade Slots: {{upgradeSlots}}</span>
+
+<span class="text"> Weight: {{weight}}</span>
+
+<span class="text ">Value: {{value}}</span>
+<button class="delete pull-right">&times;</button>
+</dd>
+
+<dd class="text">{{desc}}</dd>
+
+</dl>
+</template>
+
+
+<!--  _____________________________________________SIDE BAG ITEM__________________________ -->
+
+
+<template name="sidebagItem">
+<div class="row ">
+<div class="col-xs-6">
+<dl>
+<dt class="text sideitem">{{name}} <span> ct: {{count}}</span></dt>
+  <!-- <dd >{{desc}}</dd> -->
+</dl>
+</div>
+<div class="col-xs-4">
+<button class=" btn delete">&times;</button>
+</div>
+</div>
+
+</template>

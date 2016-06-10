@@ -4,11 +4,13 @@
 </template>
  -->
 <template name="main">
-<div class="container-fluid">
+<div class="vertical-center">
+<div class="container">
+
   <header class="row">
       <h1 class="text-center">Brimstone</h1>
 
-      <form class="form-inline">
+      <!-- <form class="form-inline">
       <div class="form-group">
         <input  class="form-control" id="name" type="text" name="name" placeholder="Add a new character" />
         <select  class="form-control" id="type" type="text" name="type"> 
@@ -19,28 +21,32 @@
         <option>Darkness</option>
         </select>
         
-        <button class="save btn btn-default">&plus;</button>
+        <button class="save btn btn-default">&plus; Add new Hero</button>
         </div>
-      </form>
+      </form> -->
+
     </header>
-  
+  <div class="filler"></div>
       {{#each Characters}}
         {{> charlist}}
       {{/each}}
   
+</div>
+<button class="save btn btn-default navbar-fixed-bottom">&plus; Add new Hero</button>
+
 </div>
 </template>
 
 
 
 <template name="charlist">
-<div class="row" >
-  <dl class="col-md-8">
-<dt><h4>{{name}} lvl: {{lvl}}</h4></dt>
-<dd class="text">{{class}}</dd>
+<div class="row text-center char" >
+  <dl class="col-xs-8">
+<dt><h4>{{name}}</h4></dt>
+<dd class="text">{{class}}  lvl: {{lvl}}</dd>
   </dl>
-  <div class="col-md-4"> 
-<button class="edit">Edit</button>
+  <div class="col-xs-4"> 
+<!-- <button class="edit">Edit</button> -->
 <button class="delete">&times;</button>
 </div>
   </div>
@@ -48,47 +54,56 @@
 
 
 <template name="charinfo">
+
 {{#with activeCharacter}}
+<div class="vertical-center">
+<nav class="navbar-default navbar-fixed-top">
 <div class="container">
-<button class="back" name="{{name}}">&lt;</button>
 <div class="row">
-    <div class="col-md-12">
-      <h3 class="text-center">
-        Hero Details
+<div class="col-xs-1">
+  <button class="back pull-left">&times;</button>
+</div>
+    <div class="col-xs-11">
+      <h3 class="text-center">Hero Details
       </h3>
     </div>
   </div>
+</div>
+</nav>
+<!-- <div class="vertical-center"> -->
+<div class="container-fluid">
+<div class="filler"></div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-xs-4 pull-left">
       <h4 class="text-center">
         {{> editableText collection="characters" field="name"}}
       </h4>
     </div>
-    <div class="col-md-6">
+    <div class="col-xs-4 pull-right">
       <h4 class="text-center">
-        {{> editableText collection="characters" field="class"}}
+        Class: {{> editableText collection="characters" field="class"}}
       </h4>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-xs-4 pull-left">
       <h4 class="text-center">
         {{> editableText collection="characters" field="keys"}}
       </h4>
     </div>
-    <div class="col-md-4">
+    <div class="col-xs-4 pull-right">
       <h4 class="text-center">
-        {{> editableText collection="characters" field="lvl"}}
+        Lvl: {{> editableText collection="characters" field="lvl"}}
       </h4>
     </div>
   </div>
   
 <div class="row">
-<div class="col-md-12">
-    <table class="table table-bordered table-condensed text-center">
+<div class="table">
+    <table class="table table-bordered text-center">
   <thead>
-    <tr >
-      <th class="text-center">Stats</th>
+    <tr class="text-center">
+      <th >Stats</th>
     </tr>
   </thead>
   <tbody>
@@ -168,7 +183,7 @@
         <div class="value">{{> editableText collection="characters" field="exp"}}</div>
       </div>
     </div>
-    <div class="sub-container">
+    <div class="container">
       <div class="move">
         <div class="label"></div>
         <div class="value"></div>
@@ -177,6 +192,7 @@
     </div>
   </div>
 </div>
+</div>
 {{/with}}
 {{> nav}}
 </template>
@@ -184,81 +200,99 @@
 
 <template name="inventoryitem">
 
-<li class="item">
-<span class="text">Name: {{> editableText collection="inventory" field="name"}}</span>
-<p>
+<dl class="item sideitem dl-horizontal" >
+<dt class="text "><h4>{{name}}</h4></dt>
 
-<span class="text">Key Words: {{> editableText collection="inventory" field="keys"}}</span>
-<span class="text">Upgrade Slots: {{> editableText collection="inventory" field="upgradeSlots"}}</span>
+<dd><span class="text">{{keys}}</span></dd>
 
-<span class="text">Weight: {{> editableText collection="inventory" field="weight"}}</span>
+<dd class="text">
 
-<span class="text">Value: {{> editableText collection="inventory" field="value"}}</span>
-</p>
-<p class="text">Description: {{> editableText collection="inventory" field="desc"}}</p>
-<button class="edit">EDIT</button>
-<button class="delete">&times;</button>
-</li>
+<span class="text">Upgrade Slots: {{upgradeSlots}}</span>
+
+<span class="text"> Weight: {{weight}}</span>
+
+<span class="text ">Value: {{value}}</span>
+<button class="delete pull-right">&times;</button>
+</dd>
+
+<dd class="text">{{desc}}</dd>
+
+</dl>
 </template>
 
-<template name="nav">
-  <div class="row">
-  <div class="col-md-12">
-  <a href="/Details" class="btn btn-default" role="button">Details</a>
-  <a href="/Equipment" class="btn btn-default" role="button">Equip</a>
-  <a href="/Sidebag" class="btn btn-default" role="button">Sidebag</a>
-  <!-- <a href="/Extras" class="btn btn-default" role="button">extras</a>
-  <a href="/Effects" class="btn btn-default" role="button">effects</a>
-  <a href="/Abilities" class="btn btn-default" role="button">Abilities</a> -->
-  </div>
-</div>
-</template>
+
 
 
 <template name="Equipment">
 
+<nav class="navbar-default navbar-fixed-top">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-12">
+      <h3 class="text-center">
+        Inventory
+      </h3>
+    </div>
+    <button class=" btn btn-default newitem">&plus; New Item</button>
+  </div>
+</div>
+</nav>
 {{#with inventory}}
-<dir class="inventoryView">
-    <h3>Inventory <button class=" btn btn-default newitem">&plus; New Item</button></h3>
-
-      <ul>
+<div class="vertical-center">
+<div class="filler-inv"></div>
+<div class="container-fluid">
+      <div class="text-center">
           {{#each inventory}}
           {{> inventoryitem}}
           {{/each}}
-      </ul>
-    </dir>
+      </div>
+    </div>
+    </div>
     {{/with}}
     {{#with itemWeight}}
     <p id="weight">Total Weight: {{itemWeight}}</p>
     {{/with}}
+    
   {{> nav}}
 </template>
 
 <template name="sidebag">
 
-{{#with inventory}}
-<dir class="container">
-    <h3>Sidebag <button class="btn btn-default newitem">&plus; New Item</button></h3>
 
+<nav class="navbar-default navbar-fixed-top">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-12">
+      <h3 class="text-center">
+        SideBag
+      </h3>
+    </div>
+    <button class=" btn btn-default newitem">&plus; New Item</button>
+  </div>
+</div>
+</nav>
+{{#with inventory}}
+<div class="vertical-center">
+<div class="filler-inv"></div>
       <ul>
           {{#each inventory}}
           {{> sidebagItem}}
           {{/each}}
       </ul>
-    </dir>
-    {{/with}}
+    </div>
+{{/with}}
   {{> nav}}
 </template>
 
 <template name="sidebagItem">
-<div class="row">
-<div class="col-md-6">
+<div class="row ">
+<div class="col-xs-6">
 <dl>
-<dt class="text">{{name}} <span> ct: {{count}}</span></dt>
-  <dd >{{desc}}</dd>
+<dt class="text sideitem">{{name}} <span> ct: {{count}}</span></dt>
+  <!-- <dd >{{desc}}</dd> -->
 </dl>
 </div>
-<div class="col-md-4">
+<div class="col-xs-4">
 <button class=" btn delete">&times;</button>
 </div>
 </div>
@@ -267,19 +301,86 @@
 
 
 <template name="sidebagdesc">
-<div class="container">
+{{#with inventory2}}
+<nav class="navbar-default navbar-fixed-top">
+<div class="container-fluid">
 <div class="row">
-<div class="col-md-6">
-<h3> Item Details</h3>
+    <div class="col-xs-12">
+      <h3 class="text-center">
+        Item Details
+      </h3>
+    </div>
+  </div>
+</div>
+</nav>
+<div class="vertical-center ">
+<div class="container">
+<div class="filler"></div>
+<div class="row text-center">
+<div class="col-xs-12">
 <dl>
-<dt class="text">{{> editableText collection="sidebag" field="name"}} <span> ct: {{> editableText collection="sidebag" field="sideItem.count"}}</span>
+<dt class="text"><h3>{{> editableText collection="sidebag" field="name"}}</h3> <span> ct: {{> editableText collection="sidebag" field="count"}}</span>
 </dt>
-  <dd> Description: {{> editableText collection="sidebag" field="sideItem.desc"}}</dd>
+  <dd> Description: {{> editableText collection="sidebag" field="desc"}}</dd>
 </dl>
 </div>
-<div class="col-md-4">
+</div>
 <button class=" btn done">Done</button>
 </div>
 </div>
+{{/with}}
+</template>
+
+<template name="equipmentdesc">
+{{#with inventory2}}
+<nav class="navbar-default navbar-fixed-top">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-12">
+      <h3 class="text-center">
+        Item Details
+      </h3>
+    </div>
+  </div>
 </div>
+</nav>
+<div class="vertical-center ">
+<div class="container">
+<div class="filler"></div>
+<div class="row text-center">
+<div class="col-xs-12">
+<dl>
+<dt class="text"><h3>{{> editableText collection="inventory" field="name"}}</h3> 
+</dt>
+  <dd> {{> editableText collection="inventory" field="keys"}}</dd>
+  <dd> <span>Slots: {{> editableText collection="inventory" field="upgradeSlots"}} </span> <span>Weight: {{> editableText collection="inventory" field="weight"}}</span> <span> Value: {{> editableText collection="inventory" field="value"}}</span> </dd>
+  <dd> Description: {{> editableText collection="inventory" field="desc"}}</dd>
+</dl>
+</div>
+</div>
+<button class=" btn done">Done</button>
+</div>
+<div class="container subitem">
+  
+
+</div>
+</div>
+
+{{/with}}
+</template>
+
+
+<!-- this is the NAV Bar Template -->
+
+<template name="nav">
+  <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="container-fluid">
+  <a href="/Details" class="btn btn-default" role="button">Details</a>
+  <a href="/Equipment" class="btn btn-default" role="button">Equip</a>
+  <a href="/Sidebag" class="btn btn-default" role="button">Sidebag</a>
+  <a href="/Extras" class="btn btn-default" role="button">extras</a>
+  <a href="/Effects" class="btn btn-default" role="button">effects</a>
+  <a href="/Abilities" class="btn btn-default" role="button">Abilities</a>
+  </div>
+</nav>
 </template>

@@ -32,8 +32,8 @@ Template.main.events({
     //prevent defaulting submit
     event.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const type = document.getElementById('type').value;
+    const name = prompt("name");
+    const type = prompt("class");
     //const type = target.type.value;
     var tempCharacter = new person(name,type);
   
@@ -42,8 +42,7 @@ Template.main.events({
      
     });
 
-    alert("Your Character: " + name + " has been saved!");
-    document.getElementById('name').value = "";
+    // alert("Your Character: " + name + " has been saved!");
 
 
   },
@@ -71,7 +70,7 @@ Template.charlist.events({
     Characters.remove(this._id);
   },
 
-  'click .edit'() {
+  'click .char'() {
 
     Characters.update(this._id, {
       $set: {activeChar: true},
@@ -197,6 +196,9 @@ Template.Equipment.events({
 
     });
   },
+
+
+
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -212,6 +214,16 @@ Template.inventoryitem.events({
 
   'click .delete'(){
     inventorydb.remove(this._id);
+    },
+
+    'click .sideitem'(){
+
+    inventorydb.update(this._id,{
+      $set: {activeequip: true},
+    });
+    
+    FlowRouter.go('/EquipmentItem');
+
     },
 
 });
@@ -238,6 +250,9 @@ Template.sidebag.events({
       var itemName = prompt("item name?");
       var count = prompt("How many of " + itemName + " are there ?");
       var desc = prompt("Describe " + itemName + ":");
+      if (count=="") { count = 0};
+      if (itemName=="") { itemName = "invalid item"};
+        if (desc=="") { desc = "No Description given"};
       var itemres = basicSideBag(this._id,itemName,"sidebag",count,desc);
       sidebagdb.insert(itemres,{
 
@@ -248,7 +263,7 @@ Template.sidebag.events({
     sidebagdb.remove(this._id);
     },
 
-    'click .row'(){
+    'click .sideitem'(){
 
     sidebagdb.update(this._id,{
       $set: {activeSideBag: true},
@@ -267,12 +282,15 @@ Template.sidebag.events({
 
 Template.sidebagdesc.helpers({
 
-   sideItem() {
-    
-  var char = activeCharacter();
-    var bag = sidebagdb.find({activeSideBag: true}).count();
-    alert(bag);
-    return bag;
+   inventory2() {
+    var char = activeCharacter();
+    var inv = sidebagdb.find({
+    $and: [
+        { owner: this._id },
+        { activeSideBag: true }
+    ]
+}).fetch();
+    return inv[0];
 
    },
 
@@ -290,7 +308,56 @@ Template.sidebagdesc.events({
   //   },
 
   'click .done'(){
+
+    sidebagdb.update(this._id,{
+      $set: {activeSideBag: false},
+    });
+
     FlowRouter.go('/Sidebag');
+    },
+
+});
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                sidebagdesc Helpers and Events
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Template.equipmentdesc.helpers({
+
+   inventory2() {
+    var char = activeCharacter();
+    var inv = inventorydb.find({
+    $and: [
+        { owner: this._id },
+        { activeequip: true }
+    ]
+}).fetch();
+    return inv[0];
+
+   },
+
+});
+
+Template.equipmentdesc.events({
+  // 'click .newitem'(){
+
+  //     var itemName = prompt("item name?");
+  //     var count = prompt("How many of " + itemName + " are there ?");
+  //     var desc = prompt("Describe " + itemName + ":");
+  //     var itemres = basicSideBag(this._id,itemName,"sidebag",count,desc);
+  //     sidebagdb.insert(itemres,{
+  //     });
+  //   },
+
+  'click .done'(){
+
+    inventorydb.update(this._id,{
+      $set: {activeequip: false},
+    });
+
+    FlowRouter.go('/Equipment');
     },
 
 });
@@ -343,6 +410,7 @@ function basicInv(owner,name,slots,weight,val,desc)  {
     "weight": weight,
     "value": val,
     "desc": desc,
+    "activeequip": false,
   }
   return item;
 };
