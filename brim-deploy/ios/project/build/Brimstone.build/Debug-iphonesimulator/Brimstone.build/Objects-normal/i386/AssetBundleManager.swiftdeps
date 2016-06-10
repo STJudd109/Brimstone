@@ -1,0 +1,941 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AssetBundleManagerDelegate"
+- "AssetBundleManager"
+provides-nominal:
+- "P9Brimstone26AssetBundleManagerDelegate"
+- "C9Brimstone18AssetBundleManager"
+provides-member:
+- ["P9Brimstone26AssetBundleManagerDelegate", ""]
+- ["C9Brimstone18AssetBundleManager", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "WebAppConfiguration"
+- !private "NSOperationQueue"
+- !private "StringLiteralType"
+- !private "dispatch_queue_create"
+- "AssetBundleDownloaderDelegate"
+- "ErrorType"
+- !private "WebAppError"
+- !private "!"
+- !private "NSURLSessionConfiguration"
+- !private "NSHTTPURLResponse"
+- !private "Set"
+- !private "!=="
+- !private "Asset"
+- !private "dispatch_async"
+- "NSURL"
+- !private "dispatch_sync"
+- !private "Array"
+- "NSURLSession"
+- "AssetBundleManager"
+- "String"
+- "AssetBundleDownloader"
+- !private "=="
+- !private "NSURLSessionTaskPriorityHigh"
+- "AssetBundleManagerDelegate"
+- !private "NSURLIsDirectoryKey"
+- "dispatch_queue_t"
+- "NSFileManager"
+- !private "??"
+- !private "!="
+- !private "BooleanLiteralType"
+- "Bool"
+- "AssetBundle"
+- "AssetManifest"
+- !private "NSLog"
+depends-member:
+- !private ["Ps9AnyObject", "AssetBundle"]
+- !private ["Ps9AnyObject", "AssetBundleDownloader"]
+- !private ["Ps9AnyObject", "AssetManifest"]
+- ["Ps9AnyObject", "NSFileManager"]
+- !private ["Ps9AnyObject", "NSLog"]
+- !private ["Ps9AnyObject", "NSOperationQueue"]
+- !private ["Ps9AnyObject", "NSURL"]
+- !private ["Ps9AnyObject", "NSURLIsDirectoryKey"]
+- !private ["Ps9AnyObject", "NSURLSession"]
+- !private ["Ps9AnyObject", "NSURLSessionConfiguration"]
+- !private ["Ps9AnyObject", "NSURLSessionTaskPriorityHigh"]
+- !private ["Ps9AnyObject", "Set"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "URLByAppendingPathComponent"]
+- !private ["Ps9AnyObject", "URLByDeletingLastPathComponent"]
+- !private ["Ps9AnyObject", "WebAppError"]
+- !private ["Ps9AnyObject", "assetBundle"]
+- ["Ps9AnyObject", "assetBundleDownloader"]
+- ["Ps9AnyObject", "assetBundleDownloaderDidFinish"]
+- !private ["Ps9AnyObject", "cachedAssetForAsset"]
+- !private ["Ps9AnyObject", "cachedAssetForURLPath"]
+- !private ["Ps9AnyObject", "cancel"]
+- !private ["Ps9AnyObject", "configuration"]
+- !private ["Ps9AnyObject", "contentsOfDirectoryAtURL"]
+- !private ["Ps9AnyObject", "createDirectoryAtURL"]
+- !private ["Ps9AnyObject", "dataTaskWithURL"]
+- !private ["Ps9AnyObject", "defaultSessionConfiguration"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "didFailWithError"]
+- !private ["Ps9AnyObject", "didFinishDownloadingAssetBundle"]
+- !private ["Ps9AnyObject", "didMoveToDirectoryAtURL"]
+- !private ["Ps9AnyObject", "directoryURL"]
+- !private ["Ps9AnyObject", "dispatch_async"]
+- !private ["Ps9AnyObject", "dispatch_queue_create"]
+- !private ["Ps9AnyObject", "dispatch_sync"]
+- !private ["Ps9AnyObject", "downloadAssetBundle"]
+- !private ["Ps9AnyObject", "downloadDirectoryURL"]
+- !private ["Ps9AnyObject", "downloadedAssetBundlesByVersion"]
+- !private ["Ps9AnyObject", "fileExistsAtPath"]
+- !private ["Ps9AnyObject", "fileManager"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "initialAssetBundle"]
+- !private ["Ps9AnyObject", "isDirectory"]
+- !private ["Ps9AnyObject", "isSuccessful"]
+- !private ["Ps9AnyObject", "lastPathComponent"]
+- !private ["Ps9AnyObject", "linkItemAtURL"]
+- !private ["Ps9AnyObject", "loadDownloadedAssetBundles"]
+- !private ["Ps9AnyObject", "maxConcurrentOperationCount"]
+- !private ["Ps9AnyObject", "moveDownloadedAssetBundleIntoPlace"]
+- !private ["Ps9AnyObject", "moveExistingDownloadDirectoryIfNeeded"]
+- !private ["Ps9AnyObject", "moveItemAtURL"]
+- !private ["Ps9AnyObject", "ownAssets"]
+- !private ["Ps9AnyObject", "partiallyDownloadedAssetBundle"]
+- !private ["Ps9AnyObject", "path"]
+- !private ["Ps9AnyObject", "priority"]
+- !private ["Ps9AnyObject", "queue"]
+- !private ["Ps9AnyObject", "removeItemAtURL"]
+- !private ["Ps9AnyObject", "resume"]
+- !private ["Ps9AnyObject", "session"]
+- !private ["Ps9AnyObject", "statusCode"]
+- !private ["Ps9AnyObject", "underlyingQueue"]
+- !private ["Ps9AnyObject", "version"]
+- !private ["Ps9AnyObject", "versionsDirectoryURL"]
+- !private ["Ps9AnyObject", "writeToURL"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SkipsHiddenFiles"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "insert"]
+- !private ["Ps23ArrayLiteralConvertible", "isEmpty"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["V9Brimstone5Asset", "URLPath"]
+- !private ["V9Brimstone5Asset", "deinit"]
+- !private ["V9Brimstone5Asset", "fileURL"]
+- !private ["V9Brimstone5Asset", "hash"]
+- !private ["C9Brimstone11AssetBundle", "cachedAssetForURLPath"]
+- !private ["C9Brimstone11AssetBundle", "deinit"]
+- !private ["C9Brimstone11AssetBundle", "didMoveToDirectoryAtURL"]
+- !private ["C9Brimstone11AssetBundle", "directoryURL"]
+- !private ["C9Brimstone11AssetBundle", "init"]
+- !private ["C9Brimstone11AssetBundle", "ownAssets"]
+- !private ["C9Brimstone11AssetBundle", "version"]
+- !private ["C9Brimstone21AssetBundleDownloader", "assetBundle"]
+- !private ["C9Brimstone21AssetBundleDownloader", "cancel"]
+- !private ["C9Brimstone21AssetBundleDownloader", "deinit"]
+- !private ["C9Brimstone21AssetBundleDownloader", "delegate"]
+- !private ["C9Brimstone21AssetBundleDownloader", "init"]
+- !private ["C9Brimstone21AssetBundleDownloader", "resume"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "AssetBundle"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "AssetBundleDownloader"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "AssetManifest"]
+- ["P9Brimstone29AssetBundleDownloaderDelegate", "NSFileManager"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "NSLog"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "NSOperationQueue"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "NSURL"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "NSURLIsDirectoryKey"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "NSURLSession"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "NSURLSessionConfiguration"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "NSURLSessionTaskPriorityHigh"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "Set"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "String"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "WebAppError"]
+- ["P9Brimstone29AssetBundleDownloaderDelegate", "assetBundleDownloader"]
+- ["P9Brimstone29AssetBundleDownloaderDelegate", "assetBundleDownloaderDidFinish"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "cachedAssetForAsset"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "configuration"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "delegate"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "didFailWithError"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "didFinishDownloadingAssetBundle"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "dispatch_async"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "dispatch_queue_create"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "dispatch_sync"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "downloadAssetBundle"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "downloadDirectoryURL"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "downloadedAssetBundlesByVersion"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "fileManager"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "initialAssetBundle"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "loadDownloadedAssetBundles"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "moveDownloadedAssetBundleIntoPlace"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "moveExistingDownloadDirectoryIfNeeded"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "partiallyDownloadedAssetBundle"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "queue"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "session"]
+- !private ["P9Brimstone29AssetBundleDownloaderDelegate", "versionsDirectoryURL"]
+- ["P9Brimstone29AssetBundleDownloaderDelegate", ""]
+- !private ["C9Brimstone18AssetBundleManager", "Asset"]
+- ["C9Brimstone18AssetBundleManager", "AssetBundle"]
+- ["C9Brimstone18AssetBundleManager", "AssetBundleDownloader"]
+- ["C9Brimstone18AssetBundleManager", "AssetBundleManagerDelegate"]
+- !private ["C9Brimstone18AssetBundleManager", "AssetManifest"]
+- ["C9Brimstone18AssetBundleManager", "Bool"]
+- ["C9Brimstone18AssetBundleManager", "ErrorType"]
+- ["C9Brimstone18AssetBundleManager", "NSFileManager"]
+- !private ["C9Brimstone18AssetBundleManager", "NSHTTPURLResponse"]
+- !private ["C9Brimstone18AssetBundleManager", "NSLog"]
+- !private ["C9Brimstone18AssetBundleManager", "NSOperationQueue"]
+- ["C9Brimstone18AssetBundleManager", "NSURL"]
+- !private ["C9Brimstone18AssetBundleManager", "NSURLIsDirectoryKey"]
+- ["C9Brimstone18AssetBundleManager", "NSURLSession"]
+- !private ["C9Brimstone18AssetBundleManager", "NSURLSessionConfiguration"]
+- !private ["C9Brimstone18AssetBundleManager", "NSURLSessionTaskPriorityHigh"]
+- !private ["C9Brimstone18AssetBundleManager", "Set"]
+- ["C9Brimstone18AssetBundleManager", "String"]
+- ["C9Brimstone18AssetBundleManager", "WebAppConfiguration"]
+- !private ["C9Brimstone18AssetBundleManager", "WebAppError"]
+- ["C9Brimstone18AssetBundleManager", "assetBundleDownloader"]
+- ["C9Brimstone18AssetBundleManager", "assetBundleDownloaderDidFinish"]
+- !private ["C9Brimstone18AssetBundleManager", "cachedAssetForAsset"]
+- ["C9Brimstone18AssetBundleManager", "checkForUpdatesWithBaseURL"]
+- ["C9Brimstone18AssetBundleManager", "configuration"]
+- ["C9Brimstone18AssetBundleManager", "deinit"]
+- ["C9Brimstone18AssetBundleManager", "delegate"]
+- !private ["C9Brimstone18AssetBundleManager", "didFailWithError"]
+- !private ["C9Brimstone18AssetBundleManager", "didFinishDownloadingAssetBundle"]
+- !private ["C9Brimstone18AssetBundleManager", "dispatch_async"]
+- !private ["C9Brimstone18AssetBundleManager", "dispatch_queue_create"]
+- ["C9Brimstone18AssetBundleManager", "dispatch_queue_t"]
+- !private ["C9Brimstone18AssetBundleManager", "dispatch_sync"]
+- !private ["C9Brimstone18AssetBundleManager", "downloadAssetBundle"]
+- !private ["C9Brimstone18AssetBundleManager", "downloadDirectoryURL"]
+- ["C9Brimstone18AssetBundleManager", "downloadedAssetBundleWithVersion"]
+- !private ["C9Brimstone18AssetBundleManager", "downloadedAssetBundlesByVersion"]
+- !private ["C9Brimstone18AssetBundleManager", "fileManager"]
+- ["C9Brimstone18AssetBundleManager", "init"]
+- ["C9Brimstone18AssetBundleManager", "initialAssetBundle"]
+- ["C9Brimstone18AssetBundleManager", "isDownloading"]
+- !private ["C9Brimstone18AssetBundleManager", "loadDownloadedAssetBundles"]
+- !private ["C9Brimstone18AssetBundleManager", "moveDownloadedAssetBundleIntoPlace"]
+- !private ["C9Brimstone18AssetBundleManager", "moveExistingDownloadDirectoryIfNeeded"]
+- !private ["C9Brimstone18AssetBundleManager", "partiallyDownloadedAssetBundle"]
+- !private ["C9Brimstone18AssetBundleManager", "queue"]
+- ["C9Brimstone18AssetBundleManager", "removeAllDownloadedAssetBundlesExceptFor"]
+- !private ["C9Brimstone18AssetBundleManager", "session"]
+- ["C9Brimstone18AssetBundleManager", "versionsDirectoryURL"]
+- ["P9Brimstone26AssetBundleManagerDelegate", "AssetBundle"]
+- ["P9Brimstone26AssetBundleManagerDelegate", "AssetBundleManager"]
+- ["P9Brimstone26AssetBundleManagerDelegate", "AssetManifest"]
+- ["P9Brimstone26AssetBundleManagerDelegate", "Bool"]
+- ["P9Brimstone26AssetBundleManagerDelegate", "ErrorType"]
+- ["P9Brimstone26AssetBundleManagerDelegate", "assetBundleManager"]
+- !private ["V9Brimstone13AssetManifest", "init"]
+- !private ["V9Brimstone13AssetManifest", "version"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "URLByAppendingPathComponent"]
+- !private ["Ps11CVarArgType", "URLByDeletingLastPathComponent"]
+- !private ["Ps11CVarArgType", "assetBundle"]
+- !private ["Ps11CVarArgType", "cancel"]
+- !private ["Ps11CVarArgType", "contentsOfDirectoryAtURL"]
+- !private ["Ps11CVarArgType", "createDirectoryAtURL"]
+- !private ["Ps11CVarArgType", "dataTaskWithURL"]
+- !private ["Ps11CVarArgType", "defaultSessionConfiguration"]
+- !private ["Ps11CVarArgType", "delegate"]
+- !private ["Ps11CVarArgType", "fileExistsAtPath"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "isDirectory"]
+- !private ["Ps11CVarArgType", "isSuccessful"]
+- !private ["Ps11CVarArgType", "lastPathComponent"]
+- !private ["Ps11CVarArgType", "linkItemAtURL"]
+- !private ["Ps11CVarArgType", "maxConcurrentOperationCount"]
+- !private ["Ps11CVarArgType", "moveItemAtURL"]
+- !private ["Ps11CVarArgType", "path"]
+- !private ["Ps11CVarArgType", "priority"]
+- !private ["Ps11CVarArgType", "removeItemAtURL"]
+- !private ["Ps11CVarArgType", "resume"]
+- !private ["Ps11CVarArgType", "statusCode"]
+- !private ["Ps11CVarArgType", "underlyingQueue"]
+- !private ["Ps11CVarArgType", "writeToURL"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "init"]
+- !private ["Ps14CollectionType", "insert"]
+- !private ["Ps14CollectionType", "isEmpty"]
+- !private ["Ps14CollectionType", "removeValueForKey"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps14CollectionType", "values"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "URLByDeletingLastPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "assetBundle"]
+- !private ["Ps28CustomDebugStringConvertible", "cancel"]
+- !private ["Ps28CustomDebugStringConvertible", "contentsOfDirectoryAtURL"]
+- !private ["Ps28CustomDebugStringConvertible", "createDirectoryAtURL"]
+- !private ["Ps28CustomDebugStringConvertible", "dataTaskWithURL"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultSessionConfiguration"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "fileExistsAtPath"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "insert"]
+- !private ["Ps28CustomDebugStringConvertible", "isDirectory"]
+- !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
+- !private ["Ps28CustomDebugStringConvertible", "isSuccessful"]
+- !private ["Ps28CustomDebugStringConvertible", "lastPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "linkItemAtURL"]
+- !private ["Ps28CustomDebugStringConvertible", "maxConcurrentOperationCount"]
+- !private ["Ps28CustomDebugStringConvertible", "moveItemAtURL"]
+- !private ["Ps28CustomDebugStringConvertible", "path"]
+- !private ["Ps28CustomDebugStringConvertible", "priority"]
+- !private ["Ps28CustomDebugStringConvertible", "removeItemAtURL"]
+- !private ["Ps28CustomDebugStringConvertible", "removeValueForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "resume"]
+- !private ["Ps28CustomDebugStringConvertible", "statusCode"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "underlyingQueue"]
+- !private ["Ps28CustomDebugStringConvertible", "values"]
+- !private ["Ps28CustomDebugStringConvertible", "writeToURL"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "DownloadFailure"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "FileSystemFailure"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps23CustomStringConvertible", "URLByDeletingLastPathComponent"]
+- !private ["Ps23CustomStringConvertible", "URLPath"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "assetBundle"]
+- !private ["Ps23CustomStringConvertible", "cancel"]
+- !private ["Ps23CustomStringConvertible", "contentsOfDirectoryAtURL"]
+- !private ["Ps23CustomStringConvertible", "createDirectoryAtURL"]
+- !private ["Ps23CustomStringConvertible", "dataTaskWithURL"]
+- !private ["Ps23CustomStringConvertible", "defaultSessionConfiguration"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "fileExistsAtPath"]
+- !private ["Ps23CustomStringConvertible", "fileURL"]
+- !private ["Ps23CustomStringConvertible", "hash"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "insert"]
+- !private ["Ps23CustomStringConvertible", "isDirectory"]
+- !private ["Ps23CustomStringConvertible", "isEmpty"]
+- !private ["Ps23CustomStringConvertible", "isSuccessful"]
+- !private ["Ps23CustomStringConvertible", "lastPathComponent"]
+- !private ["Ps23CustomStringConvertible", "linkItemAtURL"]
+- !private ["Ps23CustomStringConvertible", "maxConcurrentOperationCount"]
+- !private ["Ps23CustomStringConvertible", "moveItemAtURL"]
+- !private ["Ps23CustomStringConvertible", "path"]
+- !private ["Ps23CustomStringConvertible", "priority"]
+- !private ["Ps23CustomStringConvertible", "removeItemAtURL"]
+- !private ["Ps23CustomStringConvertible", "removeValueForKey"]
+- !private ["Ps23CustomStringConvertible", "resume"]
+- !private ["Ps23CustomStringConvertible", "statusCode"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "underlyingQueue"]
+- !private ["Ps23CustomStringConvertible", "values"]
+- !private ["Ps23CustomStringConvertible", "writeToURL"]
+- !private ["Vs10Dictionary", "Generator"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "_Element"]
+- !private ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "removeValueForKey"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Vs10Dictionary", "values"]
+- !private ["Vs15DictionaryIndex", "Distance"]
+- !private ["Vs15DictionaryIndex", "_DisabledRangeIndex"]
+- !private ["Ps28DictionaryLiteralConvertible", "Generator"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "SubSequence"]
+- !private ["Ps28DictionaryLiteralConvertible", "_Element"]
+- !private ["Ps28DictionaryLiteralConvertible", "init"]
+- !private ["Ps28DictionaryLiteralConvertible", "removeValueForKey"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Ps28DictionaryLiteralConvertible", "values"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "SkipsHiddenFiles"]
+- !private ["Ps9Equatable", "URLByAppendingPathComponent"]
+- !private ["Ps9Equatable", "URLByDeletingLastPathComponent"]
+- !private ["Ps9Equatable", "URLPath"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "assetBundle"]
+- !private ["Ps9Equatable", "cancel"]
+- !private ["Ps9Equatable", "contentsOfDirectoryAtURL"]
+- !private ["Ps9Equatable", "createDirectoryAtURL"]
+- !private ["Ps9Equatable", "dataTaskWithURL"]
+- !private ["Ps9Equatable", "defaultSessionConfiguration"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "fileExistsAtPath"]
+- !private ["Ps9Equatable", "fileURL"]
+- !private ["Ps9Equatable", "hash"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "insert"]
+- !private ["Ps9Equatable", "isDirectory"]
+- !private ["Ps9Equatable", "isEmpty"]
+- !private ["Ps9Equatable", "isSuccessful"]
+- !private ["Ps9Equatable", "lastPathComponent"]
+- !private ["Ps9Equatable", "linkItemAtURL"]
+- !private ["Ps9Equatable", "maxConcurrentOperationCount"]
+- !private ["Ps9Equatable", "moveItemAtURL"]
+- !private ["Ps9Equatable", "path"]
+- !private ["Ps9Equatable", "priority"]
+- !private ["Ps9Equatable", "removeItemAtURL"]
+- !private ["Ps9Equatable", "resume"]
+- !private ["Ps9Equatable", "statusCode"]
+- !private ["Ps9Equatable", "underlyingQueue"]
+- !private ["Ps9Equatable", "writeToURL"]
+- !private ["Ps9ErrorType", "DownloadFailure"]
+- !private ["Ps9ErrorType", "FileSystemFailure"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "URLByAppendingPathComponent"]
+- !private ["Ps8Hashable", "URLByDeletingLastPathComponent"]
+- !private ["Ps8Hashable", "URLPath"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "assetBundle"]
+- !private ["Ps8Hashable", "cancel"]
+- !private ["Ps8Hashable", "contentsOfDirectoryAtURL"]
+- !private ["Ps8Hashable", "createDirectoryAtURL"]
+- !private ["Ps8Hashable", "dataTaskWithURL"]
+- !private ["Ps8Hashable", "defaultSessionConfiguration"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "fileExistsAtPath"]
+- !private ["Ps8Hashable", "fileURL"]
+- !private ["Ps8Hashable", "hash"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "insert"]
+- !private ["Ps8Hashable", "isDirectory"]
+- !private ["Ps8Hashable", "isEmpty"]
+- !private ["Ps8Hashable", "isSuccessful"]
+- !private ["Ps8Hashable", "lastPathComponent"]
+- !private ["Ps8Hashable", "linkItemAtURL"]
+- !private ["Ps8Hashable", "maxConcurrentOperationCount"]
+- !private ["Ps8Hashable", "moveItemAtURL"]
+- !private ["Ps8Hashable", "path"]
+- !private ["Ps8Hashable", "priority"]
+- !private ["Ps8Hashable", "removeItemAtURL"]
+- !private ["Ps8Hashable", "resume"]
+- !private ["Ps8Hashable", "statusCode"]
+- !private ["Ps8Hashable", "underlyingQueue"]
+- !private ["Ps8Hashable", "writeToURL"]
+- !private ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "insert"]
+- !private ["Ps9Indexable", "isEmpty"]
+- !private ["Ps9Indexable", "removeValueForKey"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps9Indexable", "values"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps18LazyCollectionType", "Generator"]
+- !private ["Vs17LazyMapCollection", "Generator"]
+- !private ["Vs16LazyMapGenerator", "Element"]
+- !private ["Ps16LazySequenceType", "Generator"]
+- !private ["PSo37METNetworkReachabilityManagerDelegate", "assetBundle"]
+- !private ["PSo37METNetworkReachabilityManagerDelegate", "cancel"]
+- !private ["PSo37METNetworkReachabilityManagerDelegate", "delegate"]
+- !private ["PSo37METNetworkReachabilityManagerDelegate", "init"]
+- !private ["PSo37METNetworkReachabilityManagerDelegate", "resume"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["PSo8NSCoding", "URLByAppendingPathComponent"]
+- !private ["PSo8NSCoding", "URLByDeletingLastPathComponent"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isDirectory"]
+- !private ["PSo8NSCoding", "isSuccessful"]
+- !private ["PSo8NSCoding", "lastPathComponent"]
+- !private ["PSo8NSCoding", "path"]
+- !private ["PSo8NSCoding", "statusCode"]
+- !private ["PSo8NSCoding", "writeToURL"]
+- !private ["PSo9NSCopying", "URLByAppendingPathComponent"]
+- !private ["PSo9NSCopying", "URLByDeletingLastPathComponent"]
+- !private ["PSo9NSCopying", "defaultSessionConfiguration"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "isDirectory"]
+- !private ["PSo9NSCopying", "isSuccessful"]
+- !private ["PSo9NSCopying", "lastPathComponent"]
+- !private ["PSo9NSCopying", "path"]
+- !private ["PSo9NSCopying", "priority"]
+- !private ["PSo9NSCopying", "resume"]
+- !private ["PSo9NSCopying", "statusCode"]
+- !private ["PSo9NSCopying", "writeToURL"]
+- !private ["CSo6NSData", "writeToURL"]
+- !private ["VSC29NSDirectoryEnumerationOptions", "Element"]
+- !private ["VSC29NSDirectoryEnumerationOptions", "SkipsHiddenFiles"]
+- !private ["CSo13NSFileManager", "contentsOfDirectoryAtURL"]
+- !private ["CSo13NSFileManager", "createDirectoryAtURL"]
+- !private ["CSo13NSFileManager", "fileExistsAtPath"]
+- ["CSo13NSFileManager", "init"]
+- !private ["CSo13NSFileManager", "linkItemAtURL"]
+- !private ["CSo13NSFileManager", "moveItemAtURL"]
+- !private ["CSo13NSFileManager", "removeItemAtURL"]
+- !private ["CSo17NSHTTPURLResponse", "isSuccessful"]
+- !private ["CSo17NSHTTPURLResponse", "statusCode"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "writeToURL"]
+- !private ["CSo8NSObject", "URLByAppendingPathComponent"]
+- !private ["CSo8NSObject", "URLByDeletingLastPathComponent"]
+- !private ["CSo8NSObject", "assetBundle"]
+- !private ["CSo8NSObject", "cancel"]
+- !private ["CSo8NSObject", "contentsOfDirectoryAtURL"]
+- !private ["CSo8NSObject", "createDirectoryAtURL"]
+- !private ["CSo8NSObject", "dataTaskWithURL"]
+- !private ["CSo8NSObject", "defaultSessionConfiguration"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "fileExistsAtPath"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isDirectory"]
+- !private ["CSo8NSObject", "isSuccessful"]
+- !private ["CSo8NSObject", "lastPathComponent"]
+- !private ["CSo8NSObject", "linkItemAtURL"]
+- !private ["CSo8NSObject", "maxConcurrentOperationCount"]
+- !private ["CSo8NSObject", "moveItemAtURL"]
+- !private ["CSo8NSObject", "path"]
+- !private ["CSo8NSObject", "priority"]
+- !private ["CSo8NSObject", "removeItemAtURL"]
+- !private ["CSo8NSObject", "resume"]
+- !private ["CSo8NSObject", "statusCode"]
+- !private ["CSo8NSObject", "underlyingQueue"]
+- !private ["CSo8NSObject", "writeToURL"]
+- !private ["PSo16NSObjectProtocol", "URLByAppendingPathComponent"]
+- !private ["PSo16NSObjectProtocol", "URLByDeletingLastPathComponent"]
+- !private ["PSo16NSObjectProtocol", "assetBundle"]
+- !private ["PSo16NSObjectProtocol", "cancel"]
+- !private ["PSo16NSObjectProtocol", "contentsOfDirectoryAtURL"]
+- !private ["PSo16NSObjectProtocol", "createDirectoryAtURL"]
+- !private ["PSo16NSObjectProtocol", "dataTaskWithURL"]
+- !private ["PSo16NSObjectProtocol", "defaultSessionConfiguration"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "fileExistsAtPath"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isDirectory"]
+- !private ["PSo16NSObjectProtocol", "isSuccessful"]
+- !private ["PSo16NSObjectProtocol", "lastPathComponent"]
+- !private ["PSo16NSObjectProtocol", "linkItemAtURL"]
+- !private ["PSo16NSObjectProtocol", "maxConcurrentOperationCount"]
+- !private ["PSo16NSObjectProtocol", "moveItemAtURL"]
+- !private ["PSo16NSObjectProtocol", "path"]
+- !private ["PSo16NSObjectProtocol", "priority"]
+- !private ["PSo16NSObjectProtocol", "removeItemAtURL"]
+- !private ["PSo16NSObjectProtocol", "resume"]
+- !private ["PSo16NSObjectProtocol", "statusCode"]
+- !private ["PSo16NSObjectProtocol", "underlyingQueue"]
+- !private ["PSo16NSObjectProtocol", "writeToURL"]
+- !private ["CSo16NSOperationQueue", "init"]
+- !private ["CSo16NSOperationQueue", "maxConcurrentOperationCount"]
+- !private ["CSo16NSOperationQueue", "underlyingQueue"]
+- !private ["PSo14NSSecureCoding", "URLByAppendingPathComponent"]
+- !private ["PSo14NSSecureCoding", "URLByDeletingLastPathComponent"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "isDirectory"]
+- !private ["PSo14NSSecureCoding", "isSuccessful"]
+- !private ["PSo14NSSecureCoding", "lastPathComponent"]
+- !private ["PSo14NSSecureCoding", "path"]
+- !private ["PSo14NSSecureCoding", "statusCode"]
+- !private ["PSo14NSSecureCoding", "writeToURL"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "URLByAppendingPathComponent"]
+- !private ["CSo5NSURL", "URLByDeletingLastPathComponent"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo5NSURL", "isDirectory"]
+- !private ["CSo5NSURL", "lastPathComponent"]
+- !private ["CSo5NSURL", "path"]
+- !private ["CSo13NSURLResponse", "isSuccessful"]
+- !private ["CSo13NSURLResponse", "statusCode"]
+- !private ["CSo12NSURLSession", "dataTaskWithURL"]
+- !private ["CSo12NSURLSession", "init"]
+- !private ["CSo25NSURLSessionConfiguration", "defaultSessionConfiguration"]
+- !private ["PSo24NSURLSessionDataDelegate", "assetBundle"]
+- !private ["PSo24NSURLSessionDataDelegate", "cancel"]
+- !private ["PSo24NSURLSessionDataDelegate", "delegate"]
+- !private ["PSo24NSURLSessionDataDelegate", "init"]
+- !private ["PSo24NSURLSessionDataDelegate", "resume"]
+- !private ["CSo20NSURLSessionDataTask", "priority"]
+- !private ["CSo20NSURLSessionDataTask", "resume"]
+- !private ["PSo20NSURLSessionDelegate", "assetBundle"]
+- !private ["PSo20NSURLSessionDelegate", "cancel"]
+- !private ["PSo20NSURLSessionDelegate", "delegate"]
+- !private ["PSo20NSURLSessionDelegate", "init"]
+- !private ["PSo20NSURLSessionDelegate", "resume"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "assetBundle"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "cancel"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "delegate"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "init"]
+- !private ["PSo28NSURLSessionDownloadDelegate", "resume"]
+- !private ["CSo16NSURLSessionTask", "priority"]
+- !private ["CSo16NSURLSessionTask", "resume"]
+- !private ["PSo24NSURLSessionTaskDelegate", "assetBundle"]
+- !private ["PSo24NSURLSessionTaskDelegate", "cancel"]
+- !private ["PSo24NSURLSessionTaskDelegate", "delegate"]
+- !private ["PSo24NSURLSessionTaskDelegate", "init"]
+- !private ["PSo24NSURLSessionTaskDelegate", "resume"]
+- !private ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Ps13OptionSetType", "Element"]
+- !private ["Ps13OptionSetType", "SkipsHiddenFiles"]
+- !private ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "SkipsHiddenFiles"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "init"]
+- !private ["Ps12SequenceType", "insert"]
+- !private ["Ps12SequenceType", "isEmpty"]
+- !private ["Ps12SequenceType", "removeValueForKey"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps12SequenceType", "values"]
+- !private ["Vs3Set", "init"]
+- !private ["Vs3Set", "insert"]
+- !private ["Vs3Set", "isEmpty"]
+- !private ["Ps14SetAlgebraType", "Element"]
+- !private ["Ps14SetAlgebraType", "SkipsHiddenFiles"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["SP", "deinit"]
+- !private ["O9Brimstone11WebAppError", "DownloadFailure"]
+- !private ["O9Brimstone11WebAppError", "FileSystemFailure"]
+- !private ["O9Brimstone11WebAppError", "deinit"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "URLByDeletingLastPathComponent"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "isDirectory"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "lastPathComponent"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "path"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "insert"]
+- !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["Ps21_ObjectiveCBridgeable", "removeValueForKey"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "values"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "URLByAppendingPathComponent"]
+- !private ["Ps12_Reflectable", "URLByDeletingLastPathComponent"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "insert"]
+- !private ["Ps12_Reflectable", "isDirectory"]
+- !private ["Ps12_Reflectable", "isEmpty"]
+- !private ["Ps12_Reflectable", "lastPathComponent"]
+- !private ["Ps12_Reflectable", "path"]
+- !private ["Ps12_Reflectable", "removeValueForKey"]
+- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "values"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "V9Brimstone5Asset"
+- !private "C9Brimstone11AssetBundle"
+- !private "C9Brimstone21AssetBundleDownloader"
+- "P9Brimstone29AssetBundleDownloaderDelegate"
+- "C9Brimstone18AssetBundleManager"
+- "P9Brimstone26AssetBundleManagerDelegate"
+- !private "V9Brimstone13AssetManifest"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Vs15DictionaryIndex"
+- !private "Ps28DictionaryLiteralConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps9ErrorType"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "SQ"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps18LazyCollectionType"
+- !private "Vs17LazyMapCollection"
+- !private "Vs16LazyMapGenerator"
+- !private "Ps16LazySequenceType"
+- !private "PSo37METNetworkReachabilityManagerDelegate"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "VSC29NSDirectoryEnumerationOptions"
+- "CSo13NSFileManager"
+- !private "CSo17NSHTTPURLResponse"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo16NSOperationQueue"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo13NSURLResponse"
+- !private "CSo12NSURLSession"
+- !private "CSo25NSURLSessionConfiguration"
+- !private "PSo24NSURLSessionDataDelegate"
+- !private "CSo20NSURLSessionDataTask"
+- !private "PSo20NSURLSessionDelegate"
+- !private "PSo28NSURLSessionDownloadDelegate"
+- !private "CSo16NSURLSessionTask"
+- !private "PSo24NSURLSessionTaskDelegate"
+- !private "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
+- !private "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Vs3Set"
+- !private "Ps14SetAlgebraType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Vs5Slice"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "SP"
+- !private "O9Brimstone11WebAppError"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps32_FileReferenceLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Bridging-Header.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDV.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVAvailabilityDeprecated.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVAppDelegate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVViewController.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVWebViewEngineProtocol.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVTimer.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/cordova-plugin-meteor-webapp-Bridging-Header.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METPlugin.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METTimer.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METRetryStrategy.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METNetworkReachabilityManager.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METRandomValueGenerator.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServer.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerPrivate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerHTTPStatusCodes.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerFunctions.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerConnection.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerDataRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerFileRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerMultiPartFormRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerURLEncodedFormRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerDataResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerErrorResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerFileResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerStreamedResponse.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/WebKit.swiftmodule"
+interface-hash: "a2983435cebc81f0b5324350c61ceb1b"

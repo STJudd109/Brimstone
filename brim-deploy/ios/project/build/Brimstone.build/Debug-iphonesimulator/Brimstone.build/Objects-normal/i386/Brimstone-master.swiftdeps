@@ -1,0 +1,13 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "14f1afd329605f1aea876947f24c1cd6"
+build_time: [518649698, 216475000]
+inputs:
+  "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/WebAppLocalServer.swift": [518644744, 0]
+  "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/WebAppConfiguration.swift": [518644744, 0]
+  "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/AssetBundleManager.swift": [518644744, 0]
+  "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/AssetBundle.swift": [518644744, 0]
+  "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/Asset.swift": [518644744, 0]
+  "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/AssetBundleDownloader.swift": [518644744, 0]
+  "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/AssetManifest.swift": [518644745, 0]
+  "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/Errors.swift": [518644745, 0]
+  "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/Utility.swift": [518644745, 0]

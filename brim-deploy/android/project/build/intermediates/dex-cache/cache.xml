@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/spencerjudd/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.1.2/7052283359001bb108753cb0583a887d3bf94c82/okhttp-3.1.2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="7052283359001bb108753cb0583a887d3bf94c82">
+        <dex dex="/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/android/build/intermediates/pre-dexed/debug/okhttp-3.1.2_fac98eacde315224e2c60438f53350d50c4f49b8.jar" />
+    </item>
+    <item
+        jar="/Users/spencerjudd/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/android/build/intermediates/pre-dexed/debug/okio-1.6.0_46d77602c257bc7ead436555bf5dec6f918c4d60.jar" />
+    </item>
+    <item
+        jar="/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="42f51b3b7c9f208cf000c250fde436a5cbda2521">
+        <dex dex="/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_0725593280c1c3efe19e8c9debc08bb5334c7eb0.jar" />
+    </item>
+
+</items>

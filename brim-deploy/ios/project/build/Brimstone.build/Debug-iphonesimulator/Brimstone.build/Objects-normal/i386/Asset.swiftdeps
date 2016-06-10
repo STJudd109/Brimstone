@@ -1,0 +1,208 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Asset"
+- "=="
+provides-nominal:
+- "V9Brimstone5Asset"
+provides-member:
+- ["V9Brimstone5Asset", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Hashable"
+- "CustomStringConvertible"
+- "Equatable"
+- !private "ObjectIdentifier"
+- !private "&&"
+- "String"
+- "=="
+- !private "^"
+- "Bool"
+- "NSURL"
+- "Asset"
+- !private "BooleanLiteralType"
+- "Int"
+- "AssetBundle"
+depends-member:
+- !private ["Ps9AnyObject", "URLByAppendingPathComponent"]
+- !private ["Ps9AnyObject", "directoryURL"]
+- !private ["Ps9AnyObject", "hashValue"]
+- ["V9Brimstone5Asset", "AssetBundle"]
+- ["V9Brimstone5Asset", "Bool"]
+- ["V9Brimstone5Asset", "Int"]
+- ["V9Brimstone5Asset", "NSURL"]
+- !private ["V9Brimstone5Asset", "ObjectIdentifier"]
+- ["V9Brimstone5Asset", "String"]
+- ["V9Brimstone5Asset", "URLPath"]
+- ["V9Brimstone5Asset", "bundle"]
+- ["V9Brimstone5Asset", "cacheable"]
+- ["V9Brimstone5Asset", "deinit"]
+- ["V9Brimstone5Asset", "description"]
+- ["V9Brimstone5Asset", "filePath"]
+- ["V9Brimstone5Asset", "fileType"]
+- ["V9Brimstone5Asset", "fileURL"]
+- ["V9Brimstone5Asset", "hash"]
+- ["V9Brimstone5Asset", "hashValue"]
+- ["V9Brimstone5Asset", "init"]
+- ["V9Brimstone5Asset", "sourceMapURLPath"]
+- !private ["C9Brimstone11AssetBundle", "deinit"]
+- !private ["C9Brimstone11AssetBundle", "directoryURL"]
+- !private ["Ps11CVarArgType", "URLByAppendingPathComponent"]
+- !private ["Ps11CVarArgType", "hashValue"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps28CustomDebugStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "ObjectIdentifier"]
+- !private ["Ps23CustomStringConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps23CustomStringConvertible", "URLPath"]
+- !private ["Ps23CustomStringConvertible", "bundle"]
+- !private ["Ps23CustomStringConvertible", "cacheable"]
+- ["Ps23CustomStringConvertible", "description"]
+- !private ["Ps23CustomStringConvertible", "filePath"]
+- !private ["Ps23CustomStringConvertible", "fileType"]
+- !private ["Ps23CustomStringConvertible", "hash"]
+- ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "sourceMapURLPath"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "ObjectIdentifier"]
+- !private ["Ps9Equatable", "URLByAppendingPathComponent"]
+- !private ["Ps9Equatable", "URLPath"]
+- !private ["Ps9Equatable", "bundle"]
+- !private ["Ps9Equatable", "cacheable"]
+- ["Ps9Equatable", "description"]
+- !private ["Ps9Equatable", "filePath"]
+- !private ["Ps9Equatable", "fileType"]
+- !private ["Ps9Equatable", "hash"]
+- ["Ps9Equatable", "hashValue"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "sourceMapURLPath"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "hashValue"]
+- !private ["Ps8Hashable", "ObjectIdentifier"]
+- !private ["Ps8Hashable", "URLByAppendingPathComponent"]
+- !private ["Ps8Hashable", "URLPath"]
+- !private ["Ps8Hashable", "bundle"]
+- !private ["Ps8Hashable", "cacheable"]
+- ["Ps8Hashable", "description"]
+- !private ["Ps8Hashable", "filePath"]
+- !private ["Ps8Hashable", "fileType"]
+- !private ["Ps8Hashable", "hash"]
+- ["Ps8Hashable", "hashValue"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "sourceMapURLPath"]
+- ["Ps8Hashable", ""]
+- !private ["Ps14MirrorPathType", "hashValue"]
+- !private ["PSo8NSCoding", "URLByAppendingPathComponent"]
+- !private ["PSo8NSCoding", "hashValue"]
+- !private ["PSo9NSCopying", "URLByAppendingPathComponent"]
+- !private ["PSo9NSCopying", "hashValue"]
+- !private ["PSo16NSMutableCopying", "hashValue"]
+- !private ["CSo8NSObject", "URLByAppendingPathComponent"]
+- !private ["CSo8NSObject", "hashValue"]
+- !private ["PSo16NSObjectProtocol", "URLByAppendingPathComponent"]
+- !private ["PSo16NSObjectProtocol", "hashValue"]
+- !private ["PSo14NSSecureCoding", "URLByAppendingPathComponent"]
+- !private ["PSo14NSSecureCoding", "hashValue"]
+- !private ["CSo8NSString", "hashValue"]
+- !private ["CSo5NSURL", "URLByAppendingPathComponent"]
+- !private ["Vs16ObjectIdentifier", "hashValue"]
+- !private ["Vs16ObjectIdentifier", "init"]
+- !private ["Ps16OutputStreamType", "hashValue"]
+- !private ["Ps10Streamable", "hashValue"]
+- !private ["SS", "hashValue"]
+- !private ["Ps30StringInterpolationConvertible", "hashValue"]
+- !private ["Ps24StringLiteralConvertible", "hashValue"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "hashValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "hashValue"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "hashValue"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "hashValue"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "hashValue"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "URLByAppendingPathComponent"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps12_Reflectable", "URLByAppendingPathComponent"]
+- !private ["Ps12_Reflectable", "hashValue"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- "V9Brimstone5Asset"
+- !private "C9Brimstone11AssetBundle"
+- !private "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- "Ps8Hashable"
+- !private "Ps14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "Vs16ObjectIdentifier"
+- !private "Ps16OutputStreamType"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps32_FileReferenceLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Bridging-Header.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDV.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVAvailabilityDeprecated.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVAppDelegate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVViewController.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVWebViewEngineProtocol.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVTimer.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/cordova-plugin-meteor-webapp-Bridging-Header.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METPlugin.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METTimer.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METRetryStrategy.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METNetworkReachabilityManager.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METRandomValueGenerator.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServer.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerPrivate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerHTTPStatusCodes.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerFunctions.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerConnection.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerDataRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerFileRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerMultiPartFormRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerURLEncodedFormRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerDataResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerErrorResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerFileResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerStreamedResponse.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/WebKit.swiftmodule"
+interface-hash: "bb38a8dff93f8323e2105c9e9495604f"

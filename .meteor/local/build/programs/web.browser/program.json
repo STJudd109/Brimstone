@@ -1,0 +1,813 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "packages/underscore.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/underscore.js?hash=27b3d669b418de8577518760446467e6ff429b1e",
+      "sourceMap": "packages/underscore.js.map",
+      "sourceMapUrl": "/packages/27b3d669b418de8577518760446467e6ff429b1e.map",
+      "size": 150249,
+      "hash": "27b3d669b418de8577518760446467e6ff429b1e"
+    },
+    {
+      "path": "packages/meteor.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/meteor.js?hash=ae8b8affa9680bf9720bd8f7fa112f13a62f71c3",
+      "sourceMap": "packages/meteor.js.map",
+      "sourceMapUrl": "/packages/ae8b8affa9680bf9720bd8f7fa112f13a62f71c3.map",
+      "size": 121106,
+      "hash": "ae8b8affa9680bf9720bd8f7fa112f13a62f71c3"
+    },
+    {
+      "path": "packages/meteor-base.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/meteor-base.js?hash=78d760bd25caaa0aaaa51b630ff14fdbfddf0a80",
+      "size": 247,
+      "hash": "78d760bd25caaa0aaaa51b630ff14fdbfddf0a80"
+    },
+    {
+      "path": "packages/mobile-experience.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/mobile-experience.js?hash=228175c74a6bdd2cc7d213d791ad7633cde48eb6",
+      "size": 253,
+      "hash": "228175c74a6bdd2cc7d213d791ad7633cde48eb6"
+    },
+    {
+      "path": "packages/babel-compiler.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/babel-compiler.js?hash=b2d0f2c7cf462f547793f7080ba22dfce03a7a9d",
+      "size": 250,
+      "hash": "b2d0f2c7cf462f547793f7080ba22dfce03a7a9d"
+    },
+    {
+      "path": "packages/ecmascript.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/ecmascript.js?hash=66523b499a44a9bde66a5c90da84c2f620fa9038",
+      "size": 243,
+      "hash": "66523b499a44a9bde66a5c90da84c2f620fa9038"
+    },
+    {
+      "path": "packages/base64.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/base64.js?hash=e5bbbab7ff79348492ae7e574cf7931e2ee72a11",
+      "sourceMap": "packages/base64.js.map",
+      "sourceMapUrl": "/packages/e5bbbab7ff79348492ae7e574cf7931e2ee72a11.map",
+      "size": 15332,
+      "hash": "e5bbbab7ff79348492ae7e574cf7931e2ee72a11"
+    },
+    {
+      "path": "packages/ejson.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/ejson.js?hash=b1036d3e150ea4ea6470ea9cd45a48a12835d57e",
+      "sourceMap": "packages/ejson.js.map",
+      "sourceMapUrl": "/packages/b1036d3e150ea4ea6470ea9cd45a48a12835d57e.map",
+      "size": 81952,
+      "hash": "b1036d3e150ea4ea6470ea9cd45a48a12835d57e"
+    },
+    {
+      "path": "packages/id-map.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/id-map.js?hash=e665ae78e62a315f5fd218a68e373e364f74136c",
+      "sourceMap": "packages/id-map.js.map",
+      "sourceMapUrl": "/packages/e665ae78e62a315f5fd218a68e373e364f74136c.map",
+      "size": 8189,
+      "hash": "e665ae78e62a315f5fd218a68e373e364f74136c"
+    },
+    {
+      "path": "packages/ordered-dict.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/ordered-dict.js?hash=61f1d7f16d10d9f37890aaf2455697ef7c8c378b",
+      "sourceMap": "packages/ordered-dict.js.map",
+      "sourceMapUrl": "/packages/61f1d7f16d10d9f37890aaf2455697ef7c8c378b.map",
+      "size": 20041,
+      "hash": "61f1d7f16d10d9f37890aaf2455697ef7c8c378b"
+    },
+    {
+      "path": "packages/tracker.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/tracker.js?hash=6f5d0f5486aaa54b0abe636174eeb06dcc2a736b",
+      "sourceMap": "packages/tracker.js.map",
+      "sourceMapUrl": "/packages/6f5d0f5486aaa54b0abe636174eeb06dcc2a736b.map",
+      "size": 83617,
+      "hash": "6f5d0f5486aaa54b0abe636174eeb06dcc2a736b"
+    },
+    {
+      "path": "packages/modules-runtime.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/modules-runtime.js?hash=06e09a3c04e9e6663ffff9e7a8ee3291658833b2",
+      "sourceMap": "packages/modules-runtime.js.map",
+      "sourceMapUrl": "/packages/06e09a3c04e9e6663ffff9e7a8ee3291658833b2.map",
+      "size": 36434,
+      "hash": "06e09a3c04e9e6663ffff9e7a8ee3291658833b2"
+    },
+    {
+      "path": "packages/modules.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/modules.js?hash=3fc1490a705aa959ec783c80861b549f237cd3a4",
+      "sourceMap": "packages/modules.js.map",
+      "sourceMapUrl": "/packages/3fc1490a705aa959ec783c80861b549f237cd3a4.map",
+      "size": 298319,
+      "hash": "3fc1490a705aa959ec783c80861b549f237cd3a4"
+    },
+    {
+      "path": "packages/es5-shim.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/es5-shim.js?hash=e4d68c9ebbcdbd230d16f4bd933ee8dbf2978a22",
+      "sourceMap": "packages/es5-shim.js.map",
+      "sourceMapUrl": "/packages/e4d68c9ebbcdbd230d16f4bd933ee8dbf2978a22.map",
+      "size": 345509,
+      "hash": "e4d68c9ebbcdbd230d16f4bd933ee8dbf2978a22"
+    },
+    {
+      "path": "packages/promise.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/promise.js?hash=f03c28bde91db29bf1ac0d5073f93cafccc4e59e",
+      "sourceMap": "packages/promise.js.map",
+      "sourceMapUrl": "/packages/f03c28bde91db29bf1ac0d5073f93cafccc4e59e.map",
+      "size": 112356,
+      "hash": "f03c28bde91db29bf1ac0d5073f93cafccc4e59e"
+    },
+    {
+      "path": "packages/ecmascript-runtime.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/ecmascript-runtime.js?hash=e4dd2b138377d446dc7dc3af21bb5bcd4b2b88a3",
+      "sourceMap": "packages/ecmascript-runtime.js.map",
+      "sourceMapUrl": "/packages/e4dd2b138377d446dc7dc3af21bb5bcd4b2b88a3.map",
+      "size": 275307,
+      "hash": "e4dd2b138377d446dc7dc3af21bb5bcd4b2b88a3"
+    },
+    {
+      "path": "packages/babel-runtime.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/babel-runtime.js?hash=2a16a77f2f82b23483c7f76a386e0df52e9cd9cb",
+      "sourceMap": "packages/babel-runtime.js.map",
+      "sourceMapUrl": "/packages/2a16a77f2f82b23483c7f76a386e0df52e9cd9cb.map",
+      "size": 135269,
+      "hash": "2a16a77f2f82b23483c7f76a386e0df52e9cd9cb"
+    },
+    {
+      "path": "packages/random.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/random.js?hash=94fe15f9966e8181e2b6e610bf7a2c58c40a4ce7",
+      "sourceMap": "packages/random.js.map",
+      "sourceMapUrl": "/packages/94fe15f9966e8181e2b6e610bf7a2c58c40a4ce7.map",
+      "size": 35588,
+      "hash": "94fe15f9966e8181e2b6e610bf7a2c58c40a4ce7"
+    },
+    {
+      "path": "packages/mongo-id.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/mongo-id.js?hash=172813d0ff26d0175642f30557d9980b3d852a17",
+      "sourceMap": "packages/mongo-id.js.map",
+      "sourceMapUrl": "/packages/172813d0ff26d0175642f30557d9980b3d852a17.map",
+      "size": 12235,
+      "hash": "172813d0ff26d0175642f30557d9980b3d852a17"
+    },
+    {
+      "path": "packages/diff-sequence.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/diff-sequence.js?hash=21ebcc9500dc0ea4d28ec4454f001dfed0c5ab26",
+      "sourceMap": "packages/diff-sequence.js.map",
+      "sourceMapUrl": "/packages/21ebcc9500dc0ea4d28ec4454f001dfed0c5ab26.map",
+      "size": 24291,
+      "hash": "21ebcc9500dc0ea4d28ec4454f001dfed0c5ab26"
+    },
+    {
+      "path": "packages/geojson-utils.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/geojson-utils.js?hash=7214728d388f610508afa2a208b6117470822707",
+      "sourceMap": "packages/geojson-utils.js.map",
+      "sourceMapUrl": "/packages/7214728d388f610508afa2a208b6117470822707.map",
+      "size": 46635,
+      "hash": "7214728d388f610508afa2a208b6117470822707"
+    },
+    {
+      "path": "packages/minimongo.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/minimongo.js?hash=f636910493635f8b630c45a605cd39ce5db2d58f",
+      "sourceMap": "packages/minimongo.js.map",
+      "sourceMapUrl": "/packages/f636910493635f8b630c45a605cd39ce5db2d58f.map",
+      "size": 434797,
+      "hash": "f636910493635f8b630c45a605cd39ce5db2d58f"
+    },
+    {
+      "path": "packages/check.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/check.js?hash=a5d98f05c3a7f0c79c37ccded1fc5281bc19c75c",
+      "sourceMap": "packages/check.js.map",
+      "sourceMapUrl": "/packages/a5d98f05c3a7f0c79c37ccded1fc5281bc19c75c.map",
+      "size": 61505,
+      "hash": "a5d98f05c3a7f0c79c37ccded1fc5281bc19c75c"
+    },
+    {
+      "path": "packages/retry.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/retry.js?hash=91c22616ae67cee99080f81fae9e6083bf7c5711",
+      "sourceMap": "packages/retry.js.map",
+      "sourceMapUrl": "/packages/91c22616ae67cee99080f81fae9e6083bf7c5711.map",
+      "size": 6891,
+      "hash": "91c22616ae67cee99080f81fae9e6083bf7c5711"
+    },
+    {
+      "path": "packages/ddp-common.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/ddp-common.js?hash=856664b5a17454623c3854e5c4f059c5b61cf599",
+      "sourceMap": "packages/ddp-common.js.map",
+      "sourceMapUrl": "/packages/856664b5a17454623c3854e5c4f059c5b61cf599.map",
+      "size": 45197,
+      "hash": "856664b5a17454623c3854e5c4f059c5b61cf599"
+    },
+    {
+      "path": "packages/reload.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/reload.js?hash=13dcd4827170622beda942bfab260c3fad27d3eb",
+      "sourceMap": "packages/reload.js.map",
+      "sourceMapUrl": "/packages/13dcd4827170622beda942bfab260c3fad27d3eb.map",
+      "size": 26292,
+      "hash": "13dcd4827170622beda942bfab260c3fad27d3eb"
+    },
+    {
+      "path": "packages/ddp-client.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/ddp-client.js?hash=b5f1b97df6634673c68f37914ae9f4c3231c438e",
+      "sourceMap": "packages/ddp-client.js.map",
+      "sourceMapUrl": "/packages/b5f1b97df6634673c68f37914ae9f4c3231c438e.map",
+      "size": 587353,
+      "hash": "b5f1b97df6634673c68f37914ae9f4c3231c438e"
+    },
+    {
+      "path": "packages/ddp.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/ddp.js?hash=752b775e282ca59c21ca09b9cc61f5fffb9ea2a1",
+      "size": 386,
+      "hash": "752b775e282ca59c21ca09b9cc61f5fffb9ea2a1"
+    },
+    {
+      "path": "packages/ddp-server.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/ddp-server.js?hash=f22a106538ade54bd1190c4d309f2f94bdd3ec9b",
+      "size": 246,
+      "hash": "f22a106538ade54bd1190c4d309f2f94bdd3ec9b"
+    },
+    {
+      "path": "packages/allow-deny.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/allow-deny.js?hash=28b7b02fffd8490f81f75fa9580e532e61473c0a",
+      "sourceMap": "packages/allow-deny.js.map",
+      "sourceMapUrl": "/packages/28b7b02fffd8490f81f75fa9580e532e61473c0a.map",
+      "size": 58346,
+      "hash": "28b7b02fffd8490f81f75fa9580e532e61473c0a"
+    },
+    {
+      "path": "packages/insecure.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/insecure.js?hash=5679de9a1eaf70c1c18f8c3bf9493ebe2e4caa33",
+      "size": 241,
+      "hash": "5679de9a1eaf70c1c18f8c3bf9493ebe2e4caa33"
+    },
+    {
+      "path": "packages/mongo.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/mongo.js?hash=bc4cc4faf274ce28cefc812067aa65c0d4025ed4",
+      "sourceMap": "packages/mongo.js.map",
+      "sourceMapUrl": "/packages/bc4cc4faf274ce28cefc812067aa65c0d4025ed4.map",
+      "size": 105071,
+      "hash": "bc4cc4faf274ce28cefc812067aa65c0d4025ed4"
+    },
+    {
+      "path": "packages/blaze-html-templates.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/blaze-html-templates.js?hash=789c063ee96f7c7159040c8b3bf86cbc4ede975f",
+      "size": 256,
+      "hash": "789c063ee96f7c7159040c8b3bf86cbc4ede975f"
+    },
+    {
+      "path": "packages/reactive-var.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/reactive-var.js?hash=4ec04bee8ba46a9256d34c18c7f0fbbb6e782570",
+      "sourceMap": "packages/reactive-var.js.map",
+      "sourceMapUrl": "/packages/4ec04bee8ba46a9256d34c18c7f0fbbb6e782570.map",
+      "size": 13609,
+      "hash": "4ec04bee8ba46a9256d34c18c7f0fbbb6e782570"
+    },
+    {
+      "path": "packages/jquery.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/jquery.js?hash=22a0055f59bd150c435c5aba34c7c59076b8bcd9",
+      "sourceMap": "packages/jquery.js.map",
+      "sourceMapUrl": "/packages/22a0055f59bd150c435c5aba34c7c59076b8bcd9.map",
+      "size": 1297965,
+      "hash": "22a0055f59bd150c435c5aba34c7c59076b8bcd9"
+    },
+    {
+      "path": "packages/standard-minifier-css.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/standard-minifier-css.js?hash=28195a94bf7be7891ced328ed580307f7ac6ed54",
+      "size": 257,
+      "hash": "28195a94bf7be7891ced328ed580307f7ac6ed54"
+    },
+    {
+      "path": "packages/standard-minifier-js.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/standard-minifier-js.js?hash=555d6f310158f363207df43e0353de4a4883d7af",
+      "size": 256,
+      "hash": "555d6f310158f363207df43e0353de4a4883d7af"
+    },
+    {
+      "path": "packages/autopublish.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/autopublish.js?hash=bc72b03fb56c2a80ef076107d3c27287cbc7ca08",
+      "size": 244,
+      "hash": "bc72b03fb56c2a80ef076107d3c27287cbc7ca08"
+    },
+    {
+      "path": "packages/reactive-dict.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/reactive-dict.js?hash=8a78efb82b75a8822118656632a6dc7d4a185c62",
+      "sourceMap": "packages/reactive-dict.js.map",
+      "sourceMapUrl": "/packages/8a78efb82b75a8822118656632a6dc7d4a185c62.map",
+      "size": 38864,
+      "hash": "8a78efb82b75a8822118656632a6dc7d4a185c62"
+    },
+    {
+      "path": "packages/kadira_flow-router.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/kadira_flow-router.js?hash=09ea12875d3801955ee70797bf8e4a70feebc570",
+      "sourceMap": "packages/kadira_flow-router.js.map",
+      "sourceMapUrl": "/packages/09ea12875d3801955ee70797bf8e4a70feebc570.map",
+      "size": 328976,
+      "hash": "09ea12875d3801955ee70797bf8e4a70feebc570"
+    },
+    {
+      "path": "packages/deps.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/deps.js?hash=af038305759a654448f8031d60f379835ae67a8c",
+      "size": 444,
+      "hash": "af038305759a654448f8031d60f379835ae67a8c"
+    },
+    {
+      "path": "packages/htmljs.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/htmljs.js?hash=3035d42f05f842d4beb2111cc6739b9ce6cd4ca4",
+      "sourceMap": "packages/htmljs.js.map",
+      "sourceMapUrl": "/packages/3035d42f05f842d4beb2111cc6739b9ce6cd4ca4.map",
+      "size": 60540,
+      "hash": "3035d42f05f842d4beb2111cc6739b9ce6cd4ca4"
+    },
+    {
+      "path": "packages/observe-sequence.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/observe-sequence.js?hash=550c39b36ab0e65194ea03cdc7ecbe99dcdd07f6",
+      "sourceMap": "packages/observe-sequence.js.map",
+      "sourceMapUrl": "/packages/550c39b36ab0e65194ea03cdc7ecbe99dcdd07f6.map",
+      "size": 32461,
+      "hash": "550c39b36ab0e65194ea03cdc7ecbe99dcdd07f6"
+    },
+    {
+      "path": "packages/blaze.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/blaze.js?hash=ef41aed769a8945fc99ac4954e8c9ec157a88cea",
+      "sourceMap": "packages/blaze.js.map",
+      "sourceMapUrl": "/packages/ef41aed769a8945fc99ac4954e8c9ec157a88cea.map",
+      "size": 465695,
+      "hash": "ef41aed769a8945fc99ac4954e8c9ec157a88cea"
+    },
+    {
+      "path": "packages/spacebars.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/spacebars.js?hash=65db8b6a8e3fca189b416de702967b1cb83d57d5",
+      "sourceMap": "packages/spacebars.js.map",
+      "sourceMapUrl": "/packages/65db8b6a8e3fca189b416de702967b1cb83d57d5.map",
+      "size": 26814,
+      "hash": "65db8b6a8e3fca189b416de702967b1cb83d57d5"
+    },
+    {
+      "path": "packages/templating.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/templating.js?hash=f43427e80c4a8a93daf5ed094c8141a0ee19c804",
+      "sourceMap": "packages/templating.js.map",
+      "sourceMapUrl": "/packages/f43427e80c4a8a93daf5ed094c8141a0ee19c804.map",
+      "size": 24121,
+      "hash": "f43427e80c4a8a93daf5ed094c8141a0ee19c804"
+    },
+    {
+      "path": "packages/kadira_blaze-layout.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/kadira_blaze-layout.js?hash=493d22b2043f66d6b3694baa790b62a701aaec33",
+      "sourceMap": "packages/kadira_blaze-layout.js.map",
+      "sourceMapUrl": "/packages/493d22b2043f66d6b3694baa790b62a701aaec33.map",
+      "size": 16236,
+      "hash": "493d22b2043f66d6b3694baa790b62a701aaec33"
+    },
+    {
+      "path": "packages/amdingo_bootstrap-duallistbox.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/amdingo_bootstrap-duallistbox.js?hash=c17dbd7f56d1a6c28300c1aa75710ee61d18624f",
+      "sourceMap": "packages/amdingo_bootstrap-duallistbox.js.map",
+      "sourceMapUrl": "/packages/c17dbd7f56d1a6c28300c1aa75710ee61d18624f.map",
+      "size": 90862,
+      "hash": "c17dbd7f56d1a6c28300c1aa75710ee61d18624f"
+    },
+    {
+      "path": "packages/semantic_ui.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/semantic_ui.js?hash=86c650adf5ea26721abbe3ca22fb196126df2651",
+      "size": 247,
+      "hash": "86c650adf5ea26721abbe3ca22fb196126df2651"
+    },
+    {
+      "path": "packages/flemay_less-autoprefixer.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/flemay_less-autoprefixer.js?hash=66a0c43bf0706806f34849f55851816d3a669da9",
+      "size": 260,
+      "hash": "66a0c43bf0706806f34849f55851816d3a669da9"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/fortawesome_fontawesome.js?hash=28274b3e7f4ac744781cd1750459a96687fef99e",
+      "size": 259,
+      "hash": "28274b3e7f4ac744781cd1750459a96687fef99e"
+    },
+    {
+      "path": "packages/natestrauser_x-editable-bootstrap.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/natestrauser_x-editable-bootstrap.js?hash=7e0b9001297c50cb5b787d01cbacab95ff443af2",
+      "sourceMap": "packages/natestrauser_x-editable-bootstrap.js.map",
+      "sourceMapUrl": "/packages/7e0b9001297c50cb5b787d01cbacab95ff443af2.map",
+      "size": 2181862,
+      "hash": "7e0b9001297c50cb5b787d01cbacab95ff443af2"
+    },
+    {
+      "path": "packages/twbs_bootstrap-noglyph.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/twbs_bootstrap-noglyph.js?hash=47a4df31124a9a684b8dc67481139fb8bc412223",
+      "sourceMap": "packages/twbs_bootstrap-noglyph.js.map",
+      "sourceMapUrl": "/packages/47a4df31124a9a684b8dc67481139fb8bc412223.map",
+      "size": 301888,
+      "hash": "47a4df31124a9a684b8dc67481139fb8bc412223"
+    },
+    {
+      "path": "packages/gwendall_body-events.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/gwendall_body-events.js?hash=f6c0be50a7c1bdbf32982ce041633bc83bc932b7",
+      "sourceMap": "packages/gwendall_body-events.js.map",
+      "sourceMapUrl": "/packages/f6c0be50a7c1bdbf32982ce041633bc83bc932b7.map",
+      "size": 6482,
+      "hash": "f6c0be50a7c1bdbf32982ce041633bc83bc932b7"
+    },
+    {
+      "path": "packages/lai_collection-extensions.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/lai_collection-extensions.js?hash=ee2099936ab98757f2bdf568250cd7a5dd9619f9",
+      "sourceMap": "packages/lai_collection-extensions.js.map",
+      "sourceMapUrl": "/packages/ee2099936ab98757f2bdf568250cd7a5dd9619f9.map",
+      "size": 16184,
+      "hash": "ee2099936ab98757f2bdf568250cd7a5dd9619f9"
+    },
+    {
+      "path": "packages/dburles_mongo-collection-instances.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/dburles_mongo-collection-instances.js?hash=74e7e9a575f4febcdd589c3fb6c41c70bc530d1e",
+      "sourceMap": "packages/dburles_mongo-collection-instances.js.map",
+      "sourceMapUrl": "/packages/74e7e9a575f4febcdd589c3fb6c41c70bc530d1e.map",
+      "size": 5191,
+      "hash": "74e7e9a575f4febcdd589c3fb6c41c70bc530d1e"
+    },
+    {
+      "path": "packages/babrahams_editable-text.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/babrahams_editable-text.js?hash=674472f1f7ba281425faac557de2cc12beae2673",
+      "sourceMap": "packages/babrahams_editable-text.js.map",
+      "sourceMapUrl": "/packages/674472f1f7ba281425faac557de2cc12beae2673.map",
+      "size": 134769,
+      "hash": "674472f1f7ba281425faac557de2cc12beae2673"
+    },
+    {
+      "path": "packages/djedi_sanitize-html.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/djedi_sanitize-html.js?hash=47245154519cbeb0ee395b65d75716d5e188542c",
+      "size": 255,
+      "hash": "47245154519cbeb0ee395b65d75716d5e188542c"
+    },
+    {
+      "path": "packages/babrahams_editable-text-wysiwyg.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/babrahams_editable-text-wysiwyg.js?hash=50e89e4d75656bf19202fd69673287199914b825",
+      "sourceMap": "packages/babrahams_editable-text-wysiwyg.js.map",
+      "sourceMapUrl": "/packages/50e89e4d75656bf19202fd69673287199914b825.map",
+      "size": 69935,
+      "hash": "50e89e4d75656bf19202fd69673287199914b825"
+    },
+    {
+      "path": "packages/babrahams_editable-text-wysiwyg-bootstrap-3.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/babrahams_editable-text-wysiwyg-bootstrap-3.js?hash=009658c6aaabcc9d5f5f094cbd47ca1b800ea4ca",
+      "sourceMap": "packages/babrahams_editable-text-wysiwyg-bootstrap-3.js.map",
+      "sourceMapUrl": "/packages/009658c6aaabcc9d5f5f094cbd47ca1b800ea4ca.map",
+      "size": 16678,
+      "hash": "009658c6aaabcc9d5f5f094cbd47ca1b800ea4ca"
+    },
+    {
+      "path": "packages/chriswessels_hammer.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/chriswessels_hammer.js?hash=959d22d70cfce351dd7df6bedbf5402d65ac8477",
+      "sourceMap": "packages/chriswessels_hammer.js.map",
+      "sourceMapUrl": "/packages/959d22d70cfce351dd7df6bedbf5402d65ac8477.map",
+      "size": 341697,
+      "hash": "959d22d70cfce351dd7df6bedbf5402d65ac8477"
+    },
+    {
+      "path": "packages/webapp.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/webapp.js?hash=7431a11f1c671b350504fe7192b94219e5200359",
+      "sourceMap": "packages/webapp.js.map",
+      "sourceMapUrl": "/packages/7431a11f1c671b350504fe7192b94219e5200359.map",
+      "size": 3443,
+      "hash": "7431a11f1c671b350504fe7192b94219e5200359"
+    },
+    {
+      "path": "packages/livedata.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/livedata.js?hash=e7fb2e783bc81b00b914c2e27966b7b6d3d081b6",
+      "size": 470,
+      "hash": "e7fb2e783bc81b00b914c2e27966b7b6d3d081b6"
+    },
+    {
+      "path": "packages/hot-code-push.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/hot-code-push.js?hash=9121bd39124b5010787be320ca559344b6691712",
+      "size": 249,
+      "hash": "9121bd39124b5010787be320ca559344b6691712"
+    },
+    {
+      "path": "packages/launch-screen.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/launch-screen.js?hash=bc0fd472cf89d0c9b8146f07ba048efcc11ef9ee",
+      "sourceMap": "packages/launch-screen.js.map",
+      "sourceMapUrl": "/packages/bc0fd472cf89d0c9b8146f07ba048efcc11ef9ee.map",
+      "size": 8391,
+      "hash": "bc0fd472cf89d0c9b8146f07ba048efcc11ef9ee"
+    },
+    {
+      "path": "packages/ui.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/ui.js?hash=d0665bbf032532e2284f8843b30500babb10dd4d",
+      "size": 523,
+      "hash": "d0665bbf032532e2284f8843b30500babb10dd4d"
+    },
+    {
+      "path": "packages/autoupdate.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/autoupdate.js?hash=96236e059901937f5f6e64a2cc27f899a294ad73",
+      "sourceMap": "packages/autoupdate.js.map",
+      "sourceMapUrl": "/packages/96236e059901937f5f6e64a2cc27f899a294ad73.map",
+      "size": 17200,
+      "hash": "96236e059901937f5f6e64a2cc27f899a294ad73"
+    },
+    {
+      "path": "packages/global-imports.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/packages/global-imports.js?hash=42540c681b6015c31afafed3fb4e872723a59734",
+      "size": 1379,
+      "hash": "42540c681b6015c31afafed3fb4e872723a59734"
+    },
+    {
+      "path": "app/app.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/app.js?hash=168684cbf0b2d17603a7f169c25a0ca65a2ee392",
+      "sourceMap": "app/app.js.map",
+      "sourceMapUrl": "/app/168684cbf0b2d17603a7f169c25a0ca65a2ee392.map",
+      "size": 148614,
+      "hash": "168684cbf0b2d17603a7f169c25a0ca65a2ee392"
+    },
+    {
+      "path": "merged-stylesheets.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/merged-stylesheets.css?hash=3a35f94993c70989d06faec9d96767f44c0cb904",
+      "sourceMap": "merged-stylesheets.css.map",
+      "sourceMapUrl": "/3a35f94993c70989d06faec9d96767f44c0cb904.map",
+      "size": 212666,
+      "hash": "3a35f94993c70989d06faec9d96767f44c0cb904"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "size": 70807,
+      "hash": "986eed8dca049714e43eeebcb3932741a4bec76d"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "size": 365616,
+      "hash": "b06b5c8f67fd632cdc62a33b62ae4f74194131b3"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "size": 142072,
+      "hash": "6484f1af6b485d5096b71b344e67f4164c33dd1f"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "size": 83588,
+      "hash": "4a313eb93b959cc4154c684b915b0a31ddb68d84"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "size": 66624,
+      "hash": "638c652d623280a58144f93e7b552c66d1667a11"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "size": 109688,
+      "hash": "42c179eef588854b5ec151bcf6a3f58aa8b79b11"
+    },
+    {
+      "path": "packages/natestrauser_x-editable-bootstrap/lib/bootstrap-editable/img/clear.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/natestrauser_x-editable-bootstrap/lib/bootstrap-editable/img/clear.png",
+      "size": 509,
+      "hash": "9cf9c382899e5b17be2a395ca87a13dfb077f9c4"
+    },
+    {
+      "path": "packages/natestrauser_x-editable-bootstrap/lib/bootstrap-editable/img/loading.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/natestrauser_x-editable-bootstrap/lib/bootstrap-editable/img/loading.gif",
+      "size": 1849,
+      "hash": "dcabdd743fd3e9d7bd5647abeb86e66a3e6f9597"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "57287bc0a67f3cfd55254172ccd0df6a583fadf8"
+    }
+  ]
+}

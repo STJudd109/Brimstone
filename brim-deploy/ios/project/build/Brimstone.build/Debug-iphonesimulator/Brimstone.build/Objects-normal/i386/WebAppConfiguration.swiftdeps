@@ -1,0 +1,467 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "WebAppConfiguration"
+provides-nominal:
+- "C9Brimstone19WebAppConfiguration"
+provides-member:
+- ["C9Brimstone19WebAppConfiguration", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "StringLiteralType"
+- !private "!="
+- "NSUserDefaults"
+- !private "&&"
+- !private "NSLog"
+- !private "=="
+- !private "Array"
+- "NSURL"
+- "WebAppConfiguration"
+- "String"
+- !private "??"
+depends-member:
+- !private ["Ps9AnyObject", "NSLog"]
+- ["Ps9AnyObject", "NSUserDefaults"]
+- !private ["Ps9AnyObject", "URLForKey"]
+- !private ["Ps9AnyObject", "appId"]
+- !private ["Ps9AnyObject", "arrayForKey"]
+- !private ["Ps9AnyObject", "blacklistedVersions"]
+- !private ["Ps9AnyObject", "cordovaCompatibilityVersion"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "lastDownloadedVersion"]
+- !private ["Ps9AnyObject", "lastKnownGoodVersion"]
+- !private ["Ps9AnyObject", "lastSeenInitialVersion"]
+- !private ["Ps9AnyObject", "removeObjectForKey"]
+- !private ["Ps9AnyObject", "rootURL"]
+- !private ["Ps9AnyObject", "setObject"]
+- !private ["Ps9AnyObject", "setURL"]
+- ["Ps9AnyObject", "standardUserDefaults"]
+- !private ["Ps9AnyObject", "stringForKey"]
+- !private ["Ps9AnyObject", "synchronize"]
+- !private ["Ps9AnyObject", "userDefaults"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "isEmpty"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "append"]
+- !private ["Ps23ArrayLiteralConvertible", "isEmpty"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "URLForKey"]
+- !private ["Ps11CVarArgType", "arrayForKey"]
+- !private ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "removeObjectForKey"]
+- !private ["Ps11CVarArgType", "setObject"]
+- !private ["Ps11CVarArgType", "setURL"]
+- ["Ps11CVarArgType", "standardUserDefaults"]
+- !private ["Ps11CVarArgType", "stringForKey"]
+- !private ["Ps11CVarArgType", "synchronize"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "append"]
+- !private ["Ps14CollectionType", "isEmpty"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "URLForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "arrayForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
+- !private ["Ps28CustomDebugStringConvertible", "removeObjectForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "setObject"]
+- !private ["Ps28CustomDebugStringConvertible", "setURL"]
+- ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "stringForKey"]
+- !private ["Ps28CustomDebugStringConvertible", "synchronize"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "URLForKey"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "arrayForKey"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isEmpty"]
+- !private ["Ps23CustomStringConvertible", "removeObjectForKey"]
+- !private ["Ps23CustomStringConvertible", "setObject"]
+- !private ["Ps23CustomStringConvertible", "setURL"]
+- ["Ps23CustomStringConvertible", "standardUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "stringForKey"]
+- !private ["Ps23CustomStringConvertible", "synchronize"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "URLForKey"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "arrayForKey"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "removeObjectForKey"]
+- !private ["Ps9Equatable", "setObject"]
+- !private ["Ps9Equatable", "setURL"]
+- ["Ps9Equatable", "standardUserDefaults"]
+- !private ["Ps9Equatable", "stringForKey"]
+- !private ["Ps9Equatable", "synchronize"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "URLForKey"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "arrayForKey"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "removeObjectForKey"]
+- !private ["Ps8Hashable", "setObject"]
+- !private ["Ps8Hashable", "setURL"]
+- ["Ps8Hashable", "standardUserDefaults"]
+- !private ["Ps8Hashable", "stringForKey"]
+- !private ["Ps8Hashable", "synchronize"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "isEmpty"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "append"]
+- !private ["Ps21MutableCollectionType", "isEmpty"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "isEmpty"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "append"]
+- !private ["Ps16MutableSliceable", "isEmpty"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "URLForKey"]
+- !private ["CSo8NSObject", "arrayForKey"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "removeObjectForKey"]
+- !private ["CSo8NSObject", "setObject"]
+- !private ["CSo8NSObject", "setURL"]
+- ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "stringForKey"]
+- !private ["CSo8NSObject", "synchronize"]
+- !private ["PSo16NSObjectProtocol", "URLForKey"]
+- !private ["PSo16NSObjectProtocol", "arrayForKey"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "removeObjectForKey"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
+- !private ["PSo16NSObjectProtocol", "setURL"]
+- ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "stringForKey"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo14NSUserDefaults", "URLForKey"]
+- !private ["CSo14NSUserDefaults", "arrayForKey"]
+- !private ["CSo14NSUserDefaults", "removeObjectForKey"]
+- !private ["CSo14NSUserDefaults", "setObject"]
+- !private ["CSo14NSUserDefaults", "setURL"]
+- ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "stringForKey"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "append"]
+- !private ["Ps30RangeReplaceableCollectionType", "isEmpty"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "append"]
+- !private ["Ps12SequenceType", "isEmpty"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["C9Brimstone19WebAppConfiguration", "NSLog"]
+- ["C9Brimstone19WebAppConfiguration", "NSURL"]
+- ["C9Brimstone19WebAppConfiguration", "NSUserDefaults"]
+- ["C9Brimstone19WebAppConfiguration", "String"]
+- ["C9Brimstone19WebAppConfiguration", "addBlacklistedVersion"]
+- ["C9Brimstone19WebAppConfiguration", "appId"]
+- ["C9Brimstone19WebAppConfiguration", "blacklistedVersions"]
+- ["C9Brimstone19WebAppConfiguration", "cordovaCompatibilityVersion"]
+- ["C9Brimstone19WebAppConfiguration", "deinit"]
+- ["C9Brimstone19WebAppConfiguration", "init"]
+- ["C9Brimstone19WebAppConfiguration", "lastDownloadedVersion"]
+- ["C9Brimstone19WebAppConfiguration", "lastKnownGoodVersion"]
+- ["C9Brimstone19WebAppConfiguration", "lastSeenInitialVersion"]
+- ["C9Brimstone19WebAppConfiguration", "reset"]
+- ["C9Brimstone19WebAppConfiguration", "rootURL"]
+- ["C9Brimstone19WebAppConfiguration", "userDefaults"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "append"]
+- !private ["Ps10_ArrayType", "isEmpty"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "isEmpty"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "append"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "isEmpty"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "CSo14NSUserDefaults"
+- !private "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- "C9Brimstone19WebAppConfiguration"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- !private "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Bridging-Header.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDV.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVAvailabilityDeprecated.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVAppDelegate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVViewController.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVWebViewEngineProtocol.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVTimer.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/cordova-plugin-meteor-webapp-Bridging-Header.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METPlugin.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METTimer.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METRetryStrategy.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METNetworkReachabilityManager.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/METRandomValueGenerator.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServer.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerPrivate.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerHTTPStatusCodes.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerFunctions.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerConnection.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerDataRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerFileRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerMultiPartFormRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerURLEncodedFormRequest.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerDataResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerErrorResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerFileResponse.h"
+- "/Users/spencerjudd/Desktop/Web Dev/Brimstone/.meteor/local/cordova-build/platforms/ios/Brimstone/Plugins/cordova-plugin-meteor-webapp/GCDWebServerStreamedResponse.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/WebKit.swiftmodule"
+interface-hash: "bbc213e90524f04846d7532870d6cda5"

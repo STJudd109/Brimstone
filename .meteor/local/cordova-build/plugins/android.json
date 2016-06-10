@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-meteor-webapp": {
+            "PACKAGE_NAME": "com.idivd3p3y0dbgf1320qec"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.idivd3p3y0dbgf1320qec"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.idivd3p3y0dbgf1320qec"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.idivd3p3y0dbgf1320qec"
+        },
+        "cordova-plugin-wkwebview-engine": {
+            "PACKAGE_NAME": "com.idivd3p3y0dbgf1320qec"
+        }
+    },
+    "dependent_plugins": {}
+}
