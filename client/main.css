@@ -28,6 +28,15 @@ h1{
 }
 
 
+.gold {
+	margin-top: 10px;
+}
+
+.exp {
+	margin-top: 20px;
+}
+
+
 .round-button {
   width: 25%;
   margin: -5% 0 0 15%;
@@ -83,13 +92,17 @@ min-height: 100%;
 }
 
 .filler {
-	height:50px;
+	height:70px;
 	width:100%;
 }
 
 .filler-inv {
 	height:100px;
 	width:100%;
+}
+
+.table, tr, td, thead, tbody  {
+  background-color: transparent;
 }
 
 .subitem {

@@ -13,7 +13,7 @@ import './char-list.html';
     // # Destroy old editable if it exists
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                inventory Helpers and Events
+//                                Main Helpers and Events
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -72,7 +72,6 @@ Template.charlist.events({
   },
 
   'click .char'() {
-
     Characters.update(this._id, {
       $set: {activeChar: true},
     });
@@ -85,12 +84,12 @@ Template.charlist.events({
 //                                charinfo Helpers and Events
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Template.charinfo.onCreated(function() {
-  var self = this;
-  self.autorun(function () {
-    self.subscribe('Characters');
-  });
-});
+// Template.charinfo.onCreated(function() {
+//   var self = this;
+//   self.autorun(function () {
+//     self.subscribe('Characters');
+//   });
+// });
 
 Template.charinfo.helpers({
 
@@ -105,11 +104,7 @@ Template.charinfo.helpers({
   return output;
    },
 
-   // inventory() {
-   //  var char = activeCharacter();
-   //  var inv = inventorydb.find({owner: this._id});
-   //  return inv;
-   // },
+   
 
 // returns all keys and props of object
    stat() {
@@ -155,19 +150,19 @@ Template.charinfo.events({
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Template.Equipment.helpers({
-  inventory() {
-    
+
+ inventory() {
+  // alert(this._id);
     var char = activeCharacter();
-    var inv = inventorydb.find({owner: this._id});
+    var inv = inventorydb.find({owner: char._id});
     return inv;
-
    },
-   itemWeight() {
 
+   itemWeight() {
     var char = activeCharacter();
     var count = 0;
     var max = Number(char.maxWeight);
-    var inv = inventorydb.find({owner: this._id});
+    var inv = inventorydb.find({owner: char._id});
     var obj = inv.fetch();
     var curr;
 
@@ -186,13 +181,13 @@ Template.Equipment.helpers({
 
 Template.Equipment.events({
   'click .newitem'(){
-
+    var char = activeCharacter();
     var itemName = prompt("item name?");
     var slots = prompt("how many upgrade slots?");
     const weight = prompt("weight of " + itemName + "?");
     var val = prompt("worth of " + itemName + "?");
     var desc = prompt("Describe " + itemName + ":");
-    var itemres = basicInv(this._id,itemName,slots,weight,val,desc);
+    var itemres = basicInv(char._id,itemName,slots,weight,val,desc);
     inventorydb.insert(itemres,{
 
     });
@@ -238,7 +233,8 @@ Template.sidebag.helpers({
   inventory() {
     
     var char = activeCharacter();
-    var inv = sidebagdb.find({owner: this._id});
+    // alert(char._id);
+    var inv = sidebagdb.find({owner: char._id});
     return inv;
 
    },
@@ -247,14 +243,15 @@ Template.sidebag.helpers({
 
 Template.sidebag.events({
   'click .newitem'(){
-
+      var char = activeCharacter();
       var itemName = prompt("item name?");
       var count = prompt("How many of " + itemName + " are there ?");
       var desc = prompt("Describe " + itemName + ":");
       if (count=="") { count = 0};
       if (itemName=="") { itemName = "invalid item"};
         if (desc=="") { desc = "No Description given"};
-      var itemres = basicSideBag(this._id,itemName,"sidebag",count,desc);
+        // alert(this._id);
+      var itemres = basicSideBag(char._id,itemName,"sidebag",count,desc);
       sidebagdb.insert(itemres,{
 
       });
@@ -287,7 +284,7 @@ Template.sidebagdesc.helpers({
     var char = activeCharacter();
     var inv = sidebagdb.find({
     $and: [
-        { owner: this._id },
+        { owner: char._id },
         { activeSideBag: true }
     ]
 }).fetch();
@@ -331,7 +328,7 @@ Template.equipmentdesc.helpers({
     var char = activeCharacter();
     var inv = inventorydb.find({
     $and: [
-        { owner: this._id },
+        { owner: char._id },
         { activeequip: true }
     ]
 }).fetch();
@@ -451,7 +448,7 @@ function person(name, type) {
     move: 1,
   }
   return doc;
-}
+};
 
 function basicInv(owner,name,slots,weight,val,desc)  {
 
