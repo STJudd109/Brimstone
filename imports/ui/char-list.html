@@ -10,7 +10,7 @@
   <header class="row">
       <h1 class="text-center">Heroes</h1>
       <!-- <button class="save btn-add">&plus; Add new Hero</button> -->
-      <div class="round-button save"><div class="round-button-circle"><a href="http://example.com" class="round-button">Add</a></div></div>
+      <div class="round-button save"><div class="round-button-circle"><a class="round-button">Add</a></div></div>
 
       <!-- <form class="form-inline">
       <div class="form-group">
@@ -63,7 +63,7 @@
 <div class="container">
 <div class="row">
 <div class="col-xs-1">
-  <button class="back pull-left">&times;</button>
+  <button class="back btn btn-default">Characters</button>
 </div>
     <div class="col-xs-11">
       <h3 class="text-center">Hero Details
@@ -174,24 +174,41 @@
 </div>
 </div>
 
-  <div class="hero-extras">
-    <div class="sub-container">
-      <div class="gold">
-        <div class="label">gold:</div>
-        <div class="value">{{> editableText collection="characters" field="gold"}}</div>
+
+    <div class="container text-center">
+    <div class="row gold">
+      <div class="col-xs-6">
+      <div class="row gold">
+      <div class="col-xs-8">
+        <div class="text"><h4>Gold:</h4></div>
+        <div class="value"><h4>{{gold}}</h4></div>
+        </div>
+        <div class="col-xs-4 text-center">
+        <button class="plus-button pull-right valgold">&plus;</button>
+        <button class="min-button pull-left valgold">&minus;</button>
+        </div>
       </div>
-      <div class="exp">
-        <div class="label">exp:</div>
-        <div class="value">{{> editableText collection="characters" field="exp"}}</div>
+
+      <div class="row exp">
+        <div class="col-xs-8">
+        <div class="text"><h4>Exp:</h4></div>
+        <div class="value"><h4>{{exp}}</h4></div>
+        </div>
+        <div class="col-xs-4 text-center">
+        <button class="plus-button pull-right valexp">&plus;</button>
+        <button class="min-button pull-left valexp">&minus;</button>
+        </div>
       </div>
-    </div>
+      </div>
+    
     <div class="container">
-      <div class="move">
-        <div class="label"></div>
-        <div class="value"></div>
-        <button class="inc-button">&plus;</button>
+      <div class="col-xs-6">
+        <div class="text">Movement</div>
+        <div class="value"><h4>&plus;<span>{{> editableText collection="characters" field="move"}}</span></h4></div>
       </div>
     </div>
+    </div>
+
   </div>
 </div>
 </div>
@@ -226,7 +243,7 @@
 
 
 <template name="Equipment">
-
+{{#with inventory}}
 <nav class="navbar-default navbar-fixed-top">
 <div class="container-fluid">
 <div class="row">
@@ -239,7 +256,7 @@
   </div>
 </div>
 </nav>
-{{#with inventory}}
+
 <div class="vertical-center">
 <div class="filler-inv"></div>
 <div class="container-fluid">
@@ -248,19 +265,18 @@
           {{> inventoryitem}}
           {{/each}}
       </div>
-    </div>
-    </div>
-    {{/with}}
-    {{#with itemWeight}}
+      {{#with itemWeight}}
     <p id="weight">Total Weight: {{itemWeight}}</p>
     {{/with}}
+    </div>
+    </div>
+    {{/with}}
+    
     
   {{> nav}}
 </template>
 
 <template name="sidebag">
-
-
 <nav class="navbar-default navbar-fixed-top">
 <div class="container-fluid">
 <div class="row">
@@ -286,6 +302,7 @@
 </div>
 {{/with}}
   {{> nav}}
+
 </template>
 
 <template name="sidebagItem">
