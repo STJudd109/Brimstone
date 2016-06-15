@@ -8,7 +8,7 @@
 @grid-gutter-width:         30px;
 @grid-float-breakpoint:     768px;
 
-html, body {
+html {
 	background: url(Background.png) no-repeat center center;
 	background-attachment: fixed;
 	-webkit-background-size: 100% 100%;
@@ -19,6 +19,9 @@ html, body {
 	min-height: 640px;
 	height: 100%;
 
+}
+body{
+  background: transparent;
 }
 h1{
 	color: #000;
@@ -77,7 +80,13 @@ h1{
 }
 
 
+.navbar-fixed-top{
+  background-color: rgba(0,0,0,0);
 
+}
+.navbar-fixed-bottom"{
+  background-color: rgba(0,0,0,0);
+}
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -92,7 +101,7 @@ min-height: 100%;
 }
 
 .filler {
-	height:70px;
+	height:60px;
 	width:100%;
 }
 
@@ -124,4 +133,29 @@ min-height: 100%;
   background:#7f7f7f;
   background:rgba(0,0,0,0);
   border: none;
+}
+.list-transparent{
+  background:#7f7f7f;
+  background:rgba(255,255,255,.29);
+}
+.lvl-list{
+  border: solid 1px;
+  border-color: rgba(58,60,60,.29);
+  margin-top: 11px;
+  min-height: 5vh;
+  line-height: 5vh;
+  vertical-align: center;
+}
+.min-text{
+  font: Helvetica;
+  font-size: .80em;
+  font-weight: bold;
+}
+.normal-text{
+  font: Helvetica;
+  font-size: 1em;
+  font-weight: bold;
+}
+header{
+  margin-top: 10%;
 }

@@ -512,14 +512,29 @@
       <h1 class="text-center">Level Up</h1>
     </header>
   <div class="filler"></div>
-  
+  <div>
       {{#each levels}}
-        <dl class="row text-center dl-horizontal">
-          <dt>{{> editableText collection="lvl" field="desc"}}</dt>
-          <dd>{{> editableText collection="lvl" field="lvl"}}</dd>
+      <!-- <div class="lvl-list">
+        <dl class="text-center dl-horizontal">
+          <dt class="pull-left">{{> editableText collection="lvl" field="desc"}}</dt>
+          <dd class="pull-right">Level: {{lvl}}</dd>
         </dl>
+      </div> -->
+  <div class="lvl-list row list-transparent">
+    <div class="col-xs-9 text-justify normal-text">
+    <p>
+      {{> editableText collection="lvl" field="desc"}}
+    </p>
+
+    </div>
+    <div class="col-xs-3 text-center min-text">
+    <p>
+      Level: {{lvl}}
+    </p>
+    </div>
+</div>
       {{/each}}
-      
+  </div>
 </div>
 </div>
 {{> nav}}
