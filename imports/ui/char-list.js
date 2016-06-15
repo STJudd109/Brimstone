@@ -4,6 +4,7 @@ import { inventorydb } from '../api/brimChar.js';
 import { sidebagdb } from '../api/brimChar.js';
 import { extrasdb } from '../api/brimChar.js';
 import { slotsdb } from '../api/brimChar.js';
+import { lvldb } from '../api/brimChar.js';
  
 import './char-list.html';
 
@@ -43,6 +44,18 @@ Template.main.events({
      
     });
 
+    var char = activeCharacter();
+
+    levelupDefault(char._id);
+
+
+    Characters.update(char._id, {
+      $set: {activeChar: false},
+    });
+
+
+
+
     // alert("Your Character: " + name + " has been saved!");
 
 
@@ -68,6 +81,9 @@ Template.charlist.events({
   // },
   'click .delete'() {
 
+    // lvldb.remove({owner: this.id});
+    // inventorydb.remove({owner: this.id});
+    // sidebagdb.remove({owner: this.id});
     Characters.remove(this._id);
   },
 
@@ -142,6 +158,28 @@ Template.charinfo.events({
 
   //    // });
   // },
+
+  'click .valgoldplus'(){
+    var val = prompt("Increment by:","0");
+      countAdjust("+", val, "gold");
+  },
+
+    'click .valgoldmin'(){
+    var val = prompt("Increment by:","0");
+      countAdjust("-", val, "gold");
+  },
+
+   'click .valexpplus'(){
+    var val = prompt("Increment by:","0");
+      countAdjust("+", val, "exp");
+  },
+
+    'click .valexpmin'(){
+    var val = prompt("Increment by:","0");
+      countAdjust("-", val, "exp");
+  },
+
+
   
 });
 
@@ -393,8 +431,6 @@ Template.slotdesc.helpers({
 
 Template.slotdesc.events({
 
-     
-
   'click .done'(){
 
     slotsdb.update(this._id,{
@@ -411,6 +447,27 @@ Template.slotdesc.events({
 
 });
 
+Template.lvlup.helpers({
+
+levels() {
+  var output;
+  var char = activeCharacter();
+  var cursor = lvldb.find({owner: char._id},{ sort: { lvl: +1 } });
+  // output = cursor.fetch();
+  //alert(output[0].name);
+  return cursor;
+
+   },
+
+
+
+});
+
+Template.lvlup.events({
+
+
+});
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                Classes and Functions
@@ -422,6 +479,7 @@ function person(name, type) {
     name: name,
     class: type,
     lvl: 1,
+    keys: "key/key/key",
     inventory: name,
     agility: 1,
     strength: 1,
@@ -443,9 +501,10 @@ function person(name, type) {
     corruption: 1,
     darkStone: 0,
     maxWeight: 10,
-    gold: 100,
-    exp: 1000,
+    gold: 0,
+    exp: 0,
     move: 1,
+    activeChar: true,
   }
   return doc;
 };
@@ -456,7 +515,7 @@ function basicInv(owner,name,slots,weight,val,desc)  {
     "owner": owner,
     "name": name,
     "type": "equipment",
-    "keys": "item",
+    "keys": "item/item",
     "upgradeSlots":  slots,
     "weight": weight,
     "value": val,
@@ -529,5 +588,70 @@ function activeSideBag(){
     "activeSlot": false,
   }
   return item;
+
+   };
+
+function countAdjust(sign, val, type) {
+
+  var char = activeCharacter();
+  var num = val;
+
+  if (sign == "+") {
+    if (type == "exp") {
+      num = char.exp - (-val);
+      Characters.update(char._id, {
+        $set: {
+          exp: num
+        },
+      });
+    } else {
+      num = char.gold - (-val);
+      Characters.update(char._id, {
+        $set: {
+          gold: num
+        },
+      });
+    }
+
+  } else {
+    if (type == "exp") {
+      num = char.exp - val;
+      Characters.update(char._id, {
+        $set: {
+          exp: num
+        },
+      });
+    } else {
+      num = char.gold - val;
+      Characters.update(char._id, {
+        $set: {
+          gold: num
+        },
+      });
+    }
+
+  }
+
+};
+
+   function levelupDefault(owner) {
+      var srtNum = 1;
+      var endCount = 7;
+      var abs = [];
+
+      for (var i = endCount; i > 0; i--) {
+        srtNum++;
+        var ab = {
+          "owner": owner,
+          "desc" : "Level desc goes here",
+          "lvl" : srtNum,
+        }
+
+        abs.push(ab);
+      };
+
+      for (var i = abs.length - 1; i >= 0; i--) {
+        lvldb.insert(abs[i],{});
+      }
 
    };
