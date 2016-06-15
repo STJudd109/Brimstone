@@ -55,30 +55,32 @@
 <!-- <div class="vertical-center"> -->
 <div class="container-fluid">
 <header class="row">
+
       <h1 class="text-center">Hero Details</h1>
+      <div class="round-button back pull-left"><div class="round-button-circle"><a class="round-button">Back</a></div></div>
     </header>
-<button class="back btn btn-default">Characters</button>
+<!-- <button class="back btn btn-default">Characters</button> -->
 <!-- <div class="filler"></div> -->
   <div class="row">
-    <div class="col-xs-4 pull-left">
-      <h4 class="text-center">
+    <div class="col-xs-7 pull-left">
+      <h4 class="text-center info-box">
         {{> editableText collection="characters" field="name"}}
       </h4>
     </div>
-    <div class="col-xs-4 pull-right">
-      <h4 class="text-center">
-        Class: {{> editableText collection="characters" field="class"}}
+    <div class="col-xs-5 pull-right">
+      <h4 class="text-center info-box">
+        {{> editableText collection="characters" field="class"}}
       </h4>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-4 pull-left">
-      <h4 class="text-center">
+    <div class="col-xs-9 pull-left">
+      <h4 class="text-center info-box">
         {{> editableText collection="characters" field="keys"}}
       </h4>
     </div>
-    <div class="col-xs-4 pull-right">
-      <h4 class="text-center">
+    <div class="col-xs-3 pull-right">
+      <h4 class="text-center info-box">
         Lvl: {{> editableText collection="characters" field="lvl"}}
       </h4>
     </div>
@@ -86,12 +88,12 @@
   
 <div class="row">
 <div class="table">
-    <table class="table table-bordered text-center">
-  <thead>
+    <table class="tble text-center">
+ <!--  <thead>
     <tr class="text-center">
       <th >Stats</th>
     </tr>
-  </thead>
+  </thead> -->
   <tbody>
   <tr class="active">
       <td class="text-center">agility</td>
@@ -100,10 +102,10 @@
       <td class="text-center">maxGrit</td>
   </tr>
     <tr >
-      <td class="agility-cell ">{{> editableText collection="characters" field="agility"}}</td>
-      <td class="cunning-cell">{{> editableText collection="characters" field="cunning"}}</td>
-      <td class="spirit-cell">{{> editableText collection="characters" field="spirit"}}</td>
-      <td class="maxGrit-cell">{{> editableText collection="characters" field="maxGrit"}}</td>
+      <td class="agility-cell "><div class="data-box">{{> editableText collection="characters" field="agility"}}</div></td>
+      <td class="cunning-cell"><div class="data-box">{{> editableText collection="characters" field="cunning"}}</div></td>
+      <td class="spirit-cell"><div class="data-box">{{> editableText collection="characters" field="spirit"}}</div></td>
+      <td class="maxGrit-cell"><div class="data-box">{{> editableText collection="characters" field="maxGrit"}}</div></td>
     </tr>
     <tr class="active"> 
       <td class="agility-cell">strength</td>
@@ -112,10 +114,10 @@
       <td class="maxGrit-cell">initiative</td>
     </tr>
     <tr>
-      <td class="agility-cell">{{> editableText collection="characters" field="strength"}}</td>
-      <td class="cunning-cell">{{> editableText collection="characters" field="lore"}}</td>
-      <td class="spirit-cell">{{> editableText collection="characters" field="luck"}}</td>
-      <td class="maxGrit-cell">{{> editableText collection="characters" field="initiative"}}</td>
+      <td class="agility-cell"><div class="data-box">{{> editableText collection="characters" field="strength"}}</div></td>
+      <td class="cunning-cell"><div class="data-box">{{> editableText collection="characters" field="lore"}}</div></td>
+      <td class="spirit-cell"><div class="data-box">{{> editableText collection="characters" field="luck"}}</div></td>
+      <td class="maxGrit-cell"><div class="data-box">{{> editableText collection="characters" field="initiative"}}</div></td>
     </tr>
     <tr class="active">
       <td class="agility-cell">health</td>
@@ -124,10 +126,10 @@
       <td class="maxGrit-cell">corruption</td>
     </tr>
     <tr>
-      <td class="agility-cell">{{> editableText collection="characters" field="health"}}</td>
-      <td class="cunning-cell">{{> editableText collection="characters" field="sanity"}}</td>
-      <td class="spirit-cell">{{> editableText collection="characters" field="melee"}}</td>
-      <td class="maxGrit-cell">{{> editableText collection="characters" field="corruption"}}</td>
+      <td class="agility-cell"><div class="data-box">{{> editableText collection="characters" field="health"}}</div></td>
+      <td class="cunning-cell"><div class="data-box">{{> editableText collection="characters" field="sanity"}}</div></td>
+      <td class="spirit-cell"><div class="data-box">{{> editableText collection="characters" field="melee"}}</div></td>
+      <td class="maxGrit-cell"><div class="data-box">{{> editableText collection="characters" field="corruption"}}</div></td>
     </tr>
     <tr class="active">
       <td class="agility-cell">defense</td>
@@ -136,22 +138,22 @@
       <td class="maxGrit-cell">darkStone</td>
     </tr>
     <tr>
-      <td class="agility-cell">{{> editableText collection="characters" field="defense"}}</td>
-      <td class="cunning-cell">{{> editableText collection="characters" field="willpower"}}</td>
-      <td class="spirit-cell">{{> editableText collection="characters" field="combat"}}</td>
-      <td class="maxGrit-cell">{{> editableText collection="characters" field="darkStone"}}</td>
+      <td class="agility-cell"><div class="data-box">{{> editableText collection="characters" field="defense"}}</div></td>
+      <td class="cunning-cell"><div class="data-box">{{> editableText collection="characters" field="willpower"}}</div></td>
+      <td class="spirit-cell"><div class="data-box">{{> editableText collection="characters" field="combat"}}</div></td>
+      <td class="maxGrit-cell"><div class="data-box">{{> editableText collection="characters" field="darkStone"}}</div></td>
     </tr>
     <tr class="active">
       <td class="agility-cell">armor</td>
-      <td class="cunning-cell">Sarmor</td>
+      <td class="cunning-cell">S. armor</td>
       <td class="spirit-cell">range</td>
       <td class="maxGrit-cell">maxWeight</td>
     </tr>
     <tr>
-      <td class="agility-cell">{{> editableText collection="characters" field="armor"}}</td>
-      <td class="cunning-cell">{{> editableText collection="characters" field="Sarmor"}}</td>
-      <td class="spirit-cell">{{> editableText collection="characters" field="range"}}</td>
-      <td class="maxGrit-cell">{{> editableText collection="characters" field="maxWeight"}}</td>
+      <td class="agility-cell"><div class="data-box">{{> editableText collection="characters" field="armor"}}</div></td>
+      <td class="cunning-cell"><div class="data-box">{{> editableText collection="characters" field="Sarmor"}}</div></td>
+      <td class="spirit-cell"><div class="data-box">{{> editableText collection="characters" field="range"}}</div></td>
+      <td class="maxGrit-cell"><div class="data-box">{{> editableText collection="characters" field="maxWeight"}}</div></td>
     </tr>
   </tbody>
 </table>
@@ -160,37 +162,43 @@
 
 
     <div class="container text-center">
-    <div class="row gold">
-      <div class="col-xs-6">
-      <div class="row gold">
+    <div class="row">
       <div class="col-xs-8">
-        <div class="text"><h4>Gold:</h4></div>
-        <div class="value"><h4>{{gold}}</h4></div>
+      <div class="row gold">
+      <div class="col-xs-6">
+        <div class="text">Gold:</div>
+        <div class="value data-box">{{gold}}</div>
         </div>
-        <div class="col-xs-4 text-center">
-        <button class="plus-button pull-right valgoldplus">&plus;</button>
-        <button class="min-button pull-left valgoldmin">&minus;</button>
+        <div class="col-xs-2 text-center">
+        <button class="plus-button valgoldplus btn-mini">&plus;</button>
         </div>
+        <div class="col-xs-2 text-center">
+        <button class="min-button valgoldmin btn-mini">&minus;</button>
+        </div>
+        
       </div>
 
       <div class="row exp">
-        <div class="col-xs-8">
-        <div class="text"><h4>Exp:</h4></div>
-        <div class="value"><h4>{{exp}}</h4></div>
+        <div class="col-xs-6">
+        <div class="text">Exp:</div>
+        <div class="value data-box">{{exp}}</div>
         </div>
-        <div class="col-xs-4 text-center">
-        <button class="plus-button pull-right valexpplus">&plus;</button>
-        <button class="min-button pull-left valexpmin">&minus;</button>
+        <div class="col-xs-2 text-center btn-group">
+        <button class="plus-button valexpplus btn-mini">&plus;</button>
         </div>
+        <div class="col-xs-2 text-center btn-group">
+        <button class="min-button valexpmin btn-mini">&minus;</button>
+        </div>
+        
       </div>
       </div>
     
-    <div class="container">
-      <div class="col-xs-6">
-        <div class="text">Movement</div>
-        <div class="value"><h4>&plus;<span>{{> editableText collection="characters" field="move"}}</span></h4></div>
+    <!-- <div class="container"> -->
+      <div class="col-xs-4">
+        <div class="text ">Movement</div>
+        <div class="value data-box">&plus;<span>{{> editableText collection="characters" field="move"}}</span></div>
       </div>
-    </div>
+    <!-- </div> -->
     </div>
 
   </div>
@@ -353,7 +361,7 @@
 </dl>
 </div>
 <div class="col-xs-4">
-<button class=" btn btn-default delete">&times;</button>
+<button class="btn btn-danger delete">&times;</button>
 </div>
 </div>
 
@@ -553,7 +561,7 @@
   <a href="/Details" class="btn btn-default" role="button">Details</a>
   <a href="/Equipment" class="btn btn-default" role="button">Equip</a>
   <a href="/Sidebag" class="btn btn-default" role="button">Sidebag</a>
-  <a href="/Extras" class="btn btn-default" role="button">Extras</a>
+  <a href="/Extras" class="btn btn-default" role="button">Extras</a> 
   <a href="/Effects" class="btn btn-default" role="button">Effects</a>
   <a href="/Abilities" class="btn btn-default" role="button">Abilities</a>
   <a href="/LevelUP" class="btn btn-default" role="button">lvl</a>
