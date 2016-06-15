@@ -97,7 +97,7 @@ min-height: 100%;
 }
 
 .filler-inv {
-	height:100px;
+	height:50px;
 	width:100%;
 }
 
@@ -111,6 +111,17 @@ min-height: 100%;
 	min-height: 300px;
 }
 
+.invitem {
+  border: solid black 1px;
+  min-height: 600px;
+}
+
 .save {
 	height: 50px;
+}
+
+.transparent {
+  background:#7f7f7f;
+  background:rgba(0,0,0,0);
+  border: none;
 }
