@@ -35,13 +35,17 @@ html {
 	background-size: 100% 100%;
 	min-width: 360px;
 	min-height: 640px;
-	height: 100%;
+/*	height: 100%;*/
   
   font: Helvetica;
 
 }
 body{
   background: transparent;
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
 }
 h1{
 	color: #000;
@@ -198,13 +202,28 @@ header{
   margin-top: 10%;
 }
 .navbar-style{
-  width:100%; 
-  height:100%;
+  width:50%; 
+  height:50%;
 }
-.navbar-stats{
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 155px; /* .push must be the same height as .footer */
+}
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+/*.navbar-stats{
 background-image: url(StatsIcon.png) no-repeat center center
-
-
 }
 .navbar-equip{
 background: url(Equipment Icon.png) no-repeat center center
@@ -223,4 +242,4 @@ background: url(Abilities Icon.png) no-repeat center center
 }
 .navbar-levelup{
 background: url(LevelUp Icon.png) no-repeat center center
-}
+}*/

@@ -47,6 +47,7 @@ Template.main.events({
     var char = activeCharacter();
 
     levelupDefault(char._id);
+    extraSetup(char._id);
 
 
     Characters.update(char._id, {
@@ -653,5 +654,24 @@ function countAdjust(sign, val, type) {
       for (var i = abs.length - 1; i >= 0; i--) {
         lvldb.insert(abs[i],{});
       }
+
+   };
+
+   function extraSetup(owner) {
+    var extra = {
+      owner: owner,
+      injections: "none",
+      Vquest: "none",
+      Sbounty: "none",
+      Obounty: "none",
+      aura: "none",
+      transport: "none",
+      horsseShoes: "none",
+      specimenJar: false,
+      spiritGuide: false,
+      mutantProf: false,
+    };
+
+    extrasdb.insert(extra,{});
 
    };
