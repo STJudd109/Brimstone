@@ -10,7 +10,7 @@
 
 <template name="main">
 <div class="vertical-center">
-<div class="container">
+<div class="container-fluid">
 
   <header class="row">
       <h1 class="text-center">Heroes</h1>
@@ -48,9 +48,9 @@
 /////////////////////////////////////////////////////////////////////// -->
 
 <template name="charinfo">
-
-{{#with activeCharacter}}
 <div class="vertical-center">
+{{#with activeCharacter}}
+
 
 <!-- <div class="vertical-center"> -->
 <div class="container-fluid">
@@ -61,6 +61,7 @@
     </header>
 <!-- <button class="back btn btn-default">Characters</button> -->
 <!-- <div class="filler"></div> -->
+<div class="content-mid">
   <div class="row">
     <div class="col-xs-7 pull-left">
       <h4 class="text-center info-box">
@@ -203,9 +204,13 @@
 
   </div>
 </div>
+
+{{> nav}}
 </div>
 {{/with}}
-{{> nav}}
+<!-- {{> nav}} -->
+</div>
+
 </template>
 
 
@@ -219,23 +224,24 @@
 
 <div class="vertical-center">
 <!-- <div class="filler-inv"></div> -->
-<div class="container-fluid">
+<div class="container">
 <header class="row">
       <h1 class="text-center">Inventory</h1>
     </header>
-    <button class=" btn btn-default newitem">&plus; New Item</button>
-  <div class="row invitem">
+    <!-- <button class=" btn btn-default newitem">&plus; New Item</button> -->
+    <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+  <div class="row content-mid">
       <div class="text-center">
           {{#each inventory}}
           {{> inventoryitem}}
           {{/each}}
       </div>
     </div>
-      {{#with itemWeight}}
+     <!--  {{#with itemWeight}}
       <div class="row">
     <p id="weight" class="text-center">Total Weight: {{itemWeight}}</p>
     </div>
-    {{/with}}
+    {{/with}} -->
     </div>
     </div>
     {{/with}}
@@ -324,26 +330,31 @@
 
 
 <template name="sidebag">
-{{#with inventory}}
-<div class="vertical-center">
 
+<div class="vertical-center">
+{{#with inventory}}
     <div class="container-fluid">
     <header class="row">
       <h1 class="text-center">SideBag</h1>
     </header>
-    <button class=" btn btn-default newitem">&plus; New Item</button>
-    <div class="filler-inv"></div>
+    <!-- <button class=" btn btn-default newitem">&plus; New Item</button> -->
+    <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+    <!-- <div class="filler"></div> -->
     <div class="row text-center">
+    <div class="content-mid">
+      
       <ul>
           {{#each inventory}}
           {{> sidebagItem}}
           {{/each}}
       </ul>
+      </div>
     </div>
     </div>
-</div>
-{{/with}}
+    {{/with}}
   {{> nav}}
+</div>
+
 
 </template>
 
@@ -460,11 +471,14 @@
 <div class="container">
   <header class="row">
       <h1 class="text-center">Abilities</h1>
+      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
     </header>
-  <div class="filler"></div>
+  <!-- <div class="filler"></div> -->
+     <div class="content-mid">
      <!--  {{#each Characters}}
         {{> charlist}}
       {{/each}} -->
+      </div>
 </div>
 </div>
 {{> nav}}
@@ -479,11 +493,14 @@
 <div class="container">
   <header class="row">
       <h1 class="text-center">Effects</h1>
+      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
     </header>
-  <div class="filler"></div>
+  <!-- <div class="filler"></div> -->
+     <div class="content-mid">
      <!--  {{#each Characters}}
         {{> charlist}}
       {{/each}} -->
+      </div>
 </div>
 </div>
 {{> nav}}
@@ -498,11 +515,14 @@
 <div class="container">
   <header class="row">
       <h1 class="text-center">Extras</h1>
+      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
     </header>
-  <div class="filler"></div>
+  <!-- <div class="filler"></div> -->
+  <div class="content-mid">
      <!--  {{#each Characters}}
         {{> charlist}}
       {{/each}} -->
+      </div>
 </div>
 </div>
 {{> nav}}
@@ -515,12 +535,13 @@
 
 <template name="lvlup">
 <div class="vertical-center">
-<div class="container">
+<div class="container ">
   <header class="row">
       <h1 class="text-center">Level Up</h1>
+      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
     </header>
-  <div class="filler"></div>
-  <div>
+  <!-- <div class="filler"></div> -->
+  <div class="content-mid">
       {{#each levels}}
       <!-- <div class="lvl-list">
         <dl class="text-center dl-horizontal">
@@ -557,8 +578,8 @@ navbar navbar-default navbar-fixed-bottom
 /////////////////////////////////////////////////////////////////////// -->
 
 <template name="nav">
-  <nav class="navbar navbar-default navbar-fixed-bottom transparent text-center" role="navigation">
-  <div class="container-fluid">
+  <!-- <nav class="  text-center" role="navigation"> -->
+  <div class="container-fluid max transparent">
   <a href="/Details" class="navbar-style navbar-stats">
     <img src="/NavBar_Images/StatsIcon.png"/>
   </a>
@@ -577,8 +598,8 @@ navbar navbar-default navbar-fixed-bottom
   <a href="/Abilities" class="navbar-style navbar-stats">
     <img src="/NavBar_Images/AbilitiesIcon.png"/>
   </a>
-  <a href="/LevelUP" class="navbar-style navbar-stats">
-    <img src="/NavBar_Images/LevelUpIcon.png"/>
+  <a href="/LevelUP" class=" navbar-stats">
+    <img class=" navbar-stats" src="/NavBar_Images/LevelUpIcon.png"/>
   </a>
   <!-- <a href="/Equipment" class="btn btn-default" role="button">Equip</a>
   <a href="/Sidebag" class="btn btn-default" role="button">Sidebag</a>
@@ -587,7 +608,7 @@ navbar navbar-default navbar-fixed-bottom
   <a href="/Abilities" class="btn btn-default" role="button">Abilities</a>
   <a href="/LevelUP" class="btn btn-default" role="button">lvl</a> -->
   </div>
-</nav>
+<!-- </nav> -->
 </template>
 
 
