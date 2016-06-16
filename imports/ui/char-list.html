@@ -13,10 +13,17 @@
 <div class="container-fluid">
 
   <header class="row">
-      <h1 class="text-center">Heroes</h1>
-      <!-- <button class="save btn-add">&plus; Add new Hero</button> -->
-      <div class="round-button save"><div class="round-button-circle"><a class="round-button">Add</a></div></div>
-
+      <div class="col-xs-2">
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
+      </div>
+      <div class="col-xs-8">
+      <h1 class="text-center">Heros</h1>
+      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      </div>
+      <div class="col-xs-2">
+        <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">Bag</a></div></div> -->
+      </div>
     </header>
   <div class="filler"></div>
       {{#each Characters}}
@@ -55,9 +62,15 @@
 <!-- <div class="vertical-center"> -->
 <div class="container-fluid">
 <header class="row">
-
+      
+      <!-- <h1 class="text-center">Hero Details</h1>
+      <div class="round-button back pull-left"><div class="round-button-circle"><a class="round-button">Back</a></div></div> -->
+      <div class="col-xs-2"></div>
+  <div class="col-xs-8">
       <h1 class="text-center">Hero Details</h1>
-      <div class="round-button back pull-left"><div class="round-button-circle"><a class="round-button">Back</a></div></div>
+      <div class="round-button back "><div class="round-button-circle"><a class="round-button">Back</a></div></div>
+  </div>
+  <div class="col-xs-2"></div>
     </header>
 <!-- <button class="back btn btn-default">Characters</button> -->
 <!-- <div class="filler"></div> -->
@@ -205,12 +218,14 @@
   </div>
 </div>
 
-{{> nav}}
-</div>
-{{/with}}
-<!-- {{> nav}} -->
+
 </div>
 
+{{/with}}
+
+<!-- {{> nav}} -->
+</div>
+{{> nav}}
 </template>
 
 
@@ -224,30 +239,49 @@
 
 <div class="vertical-center">
 <!-- <div class="filler-inv"></div> -->
-<div class="container">
+<div class="container-fluid">
 <header class="row">
+      <div class="col-xs-2">
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
+      </div>
+      <div class="col-xs-8">
       <h1 class="text-center">Inventory</h1>
+      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      </div>
+      <div class="col-xs-2">
+        <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">Bag</a></div></div> -->
+      </div>
     </header>
-    <!-- <button class=" btn btn-default newitem">&plus; New Item</button> -->
-    <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
-  <div class="row content-mid">
+    
+    
+    <!-- <div class="round-button sidebag pull-left"><div class="round-button-circle"><a class="round-button">Bag</a></div></div> -->
+  <div class="row content-mid-equip">
       <div class="text-center">
           {{#each inventory}}
           {{> inventoryitem}}
           {{/each}}
       </div>
     </div>
-     <!--  {{#with itemWeight}}
+      {{#with itemWeight}}
       <div class="row">
-    <p id="weight" class="text-center">Total Weight: {{itemWeight}}</p>
+      <div class="col-xs-5">
+    <p id="weight" class="text-center">Weight</p>
+    <p id="weight" class="text-center data-box">{{itemWeight}}</p>
     </div>
-    {{/with}} -->
-    </div>
+    <div class="col-xs-5">
+     <button class="pull-right btn btn-default sidebag">SideBag</button>
+     </div>
     </div>
     {{/with}}
     
+    </div>
+    </div>
+    {{> nav}}
+    {{/with}}
     
-  {{> nav}}
+    
+  
 </template>
 
 
@@ -335,13 +369,23 @@
 {{#with inventory}}
     <div class="container-fluid">
     <header class="row">
+      <div class="col-xs-2">
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
+      </div>
+      <div class="col-xs-8">
       <h1 class="text-center">SideBag</h1>
+      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      </div>
+      <div class="col-xs-2">
+        <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">Bag</a></div></div> -->
+      </div>
     </header>
     <!-- <button class=" btn btn-default newitem">&plus; New Item</button> -->
-    <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
-    <!-- <div class="filler"></div> -->
+    <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
+    <div class="filler"></div>
     <div class="row text-center">
-    <div class="content-mid">
+    <div class="content-mid-equip">
       
       <ul>
           {{#each inventory}}
@@ -468,10 +512,19 @@
 
 <template name="abilities">
 <div class="vertical-center">
-<div class="container">
+<div class="container-fluid">
   <header class="row">
+      <div class="col-xs-2">
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
+      </div>
+      <div class="col-xs-8">
       <h1 class="text-center">Abilities</h1>
       <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      </div>
+      <div class="col-xs-2">
+        <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">Bag</a></div></div> -->
+      </div>
     </header>
   <!-- <div class="filler"></div> -->
      <div class="content-mid">
@@ -490,10 +543,19 @@
 
 <template name="effects">
 <div class="vertical-center">
-<div class="container">
+<div class="container-fluid">
   <header class="row">
+      <div class="col-xs-2">
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
+      </div>
+      <div class="col-xs-8">
       <h1 class="text-center">Effects</h1>
       <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      </div>
+      <div class="col-xs-2">
+        <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">Bag</a></div></div> -->
+      </div>
     </header>
   <!-- <div class="filler"></div> -->
      <div class="content-mid">
@@ -512,10 +574,19 @@
 
 <template name="extras">
 <div class="vertical-center">
-<div class="container">
+<div class="container-fluid">
   <header class="row">
+      <div class="col-xs-2">
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
+      </div>
+      <div class="col-xs-8">
       <h1 class="text-center">Extras</h1>
       <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      </div>
+      <div class="col-xs-2">
+        <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">Bag</a></div></div> -->
+      </div>
     </header>
   <!-- <div class="filler"></div> -->
   <div class="content-mid">
@@ -535,10 +606,19 @@
 
 <template name="lvlup">
 <div class="vertical-center">
-<div class="container ">
+<div class="container-fluid">
   <header class="row">
+      <div class="col-xs-2">
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
+      </div>
+      <div class="col-xs-8">
       <h1 class="text-center">Level Up</h1>
-      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
+      </div>
+      <div class="col-xs-2">
+        <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
+        <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">Bag</a></div></div> -->
+      </div>
     </header>
   <!-- <div class="filler"></div> -->
   <div class="content-mid">
@@ -579,16 +659,16 @@ navbar navbar-default navbar-fixed-bottom
 
 <template name="nav">
   <!-- <nav class="  text-center" role="navigation"> -->
-  <div class="container-fluid max transparent">
+  <div class="container-fluid text-center transparent">
   <a href="/Details" class="navbar-style navbar-stats">
     <img src="/NavBar_Images/StatsIcon.png"/>
   </a>
   <a href="/Equipment" class="navbar-style navbar-stats">
     <img src="/NavBar_Images/EquipmentIcon.png"/>
   </a>
-  <a href="/Sidebag" class="navbar-style navbar-stats">
+  <!-- <a href="/Sidebag" class="navbar-style navbar-stats">
     <img src="/NavBar_Images/SideBagIcon.png"/>
-  </a>
+  </a> -->
   <a href="/Extras" class="navbar-style navbar-stats">
     <img src="/NavBar_Images/ExtrasIcon.png"/>
   </a>
@@ -598,7 +678,7 @@ navbar navbar-default navbar-fixed-bottom
   <a href="/Abilities" class="navbar-style navbar-stats">
     <img src="/NavBar_Images/AbilitiesIcon.png"/>
   </a>
-  <a href="/LevelUP" class=" navbar-stats">
+  <a href="/LevelUP" class="navbar-stats">
     <img class=" navbar-stats" src="/NavBar_Images/LevelUpIcon.png"/>
   </a>
   <!-- <a href="/Equipment" class="btn btn-default" role="button">Equip</a>
