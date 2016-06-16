@@ -210,7 +210,7 @@ Template.Equipment.helpers({
        count += curr
     }
     if (count >= max) {
-     return count + " / " + char.maxWeight + " Your Character is overweight !!!";
+     return count + " / " + char.maxWeight;
     } else {
       return count + " / " + char.maxWeight;
     }
@@ -230,6 +230,10 @@ Template.Equipment.events({
     inventorydb.insert(itemres,{
 
     });
+  },
+
+  'click .sidebag'() {
+    FlowRouter.go('/Sidebag')
   },
 
 
