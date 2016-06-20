@@ -2,14 +2,17 @@ import { Template } from 'meteor/templating';
 import { Characters } from '../api/brimChar.js';
 import { inventorydb } from '../api/brimChar.js';
 import { sidebagdb } from '../api/brimChar.js';
-import { extrasdb } from '../api/brimChar.js';
 import { slotsdb } from '../api/brimChar.js';
+import { ammodb } from '../api/brimChar.js';
 import { lvldb } from '../api/brimChar.js';
+import { extradb } from '../api/brimChar.js';
+import { effectsdb } from '../api/brimChar.js';
+import { abilitiesdb } from '../api/brimChar.js';
  
 import './char-list.html';
 
 
-  
+document.addEventListener("backbutton", onBackKeyDown, false);
 
     // # Destroy old editable if it exists
 
@@ -85,6 +88,9 @@ Template.charlist.events({
     // lvldb.remove({owner: this.id});
     // inventorydb.remove({owner: this.id});
     // sidebagdb.remove({owner: this.id});
+    // abilitiesdb.remove({owner: this.id});
+    // effectsdb.remove({owner: this.id});
+    // ammodb.remove({owner: this.id});
     Characters.remove(this._id);
   },
 
@@ -161,22 +167,22 @@ Template.charinfo.events({
   // },
 
   'click .valgoldplus'(){
-    var val = prompt("Increment by:","0");
+    var val = prompt("Increment by:");
       countAdjust("+", val, "gold");
   },
 
     'click .valgoldmin'(){
-    var val = prompt("Increment by:","0");
+    var val = prompt("Increment by:");
       countAdjust("-", val, "gold");
   },
 
    'click .valexpplus'(){
-    var val = prompt("Increment by:","0");
+    var val = prompt("Increment by:");
       countAdjust("+", val, "exp");
   },
 
     'click .valexpmin'(){
-    var val = prompt("Increment by:","0");
+    var val = prompt("Increment by:");
       countAdjust("-", val, "exp");
   },
 
@@ -222,10 +228,13 @@ Template.Equipment.events({
   'click .newitem'(){
     var char = activeCharacter();
     var itemName = prompt("item name?");
-    var slots = prompt("how many upgrade slots?");
-    const weight = prompt("weight of " + itemName + "?");
-    var val = prompt("worth of " + itemName + "?");
-    var desc = prompt("Describe " + itemName + ":");
+    var slots = 0; //prompt("how many upgrade slots?");
+    var weight = prompt("weight of " + itemName + "?");
+    if (weight == "") {
+      weight = 0;
+    }
+    var val =  000;//prompt("worth of " + itemName + "?");
+    var desc = "Default item Description"; //prompt("Describe " + itemName + ":");
     var itemres = basicInv(char._id,itemName,slots,weight,val,desc);
     inventorydb.insert(itemres,{
 
@@ -251,11 +260,8 @@ Template.inventoryitem.helpers({
 
 Template.inventoryitem.events({
 
-  'click .delete'(){
-    inventorydb.remove(this._id);
-    },
 
-    'click .sideitem'(){
+    'click .item'(){
 
     inventorydb.update(this._id,{
       $set: {activeequip: true},
@@ -266,6 +272,67 @@ Template.inventoryitem.events({
     },
 
 });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                equipmentdesc Helpers and Events
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Template.equipmentdesc.helpers({
+
+   inventory2() {
+    var char = activeCharacter();
+    var inv = inventorydb.find({
+    $and: [
+        { owner: char._id },
+        { activeequip: true }
+    ]
+}).fetch();
+    return inv[0];
+
+   },
+
+   slotItem() {
+var item = slotsdb.find({owner: this._id});
+    return item;
+
+   },
+
+});
+
+Template.equipmentdesc.events({
+  'click .newitem'(){
+      var itemName = prompt("Name?");
+      var slots = prompt("How many slots does " + itemName + " cost?");
+      var itemres = slotMake(this._id,itemName,slots);
+      slotsdb.insert(itemres,{
+      });
+    },
+
+  'click .delete'(){
+    inventorydb.remove(this._id);
+    FlowRouter.go('/Equipment');
+    },
+
+  'click .done'(){
+
+    inventorydb.update(this._id,{
+      $set: {activeequip: false},
+    });
+
+    FlowRouter.go('/Equipment');
+    },
+
+     'click .sideitem'(){
+
+    slotsdb.update(this._id,{
+      $set: {activeSlot: true},
+    });
+    FlowRouter.go('/EquipmentSlot');
+  },
+
+});
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                sidebag Helpers and Events
@@ -304,7 +371,7 @@ Template.sidebag.events({
     sidebagdb.remove(this._id);
     },
 
-    'click .sideitem'(){
+    'click .item'(){
 
     sidebagdb.update(this._id,{
       $set: {activeSideBag: true},
@@ -348,6 +415,11 @@ Template.sidebagdesc.events({
   //     });
   //   },
 
+    'click .delete'(){
+    sidebagdb.remove(this._id);
+    FlowRouter.go('/Sidebag');
+    },
+
   'click .done'(){
 
     sidebagdb.update(this._id,{
@@ -360,60 +432,6 @@ Template.sidebagdesc.events({
 });
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                sidebagdesc Helpers and Events
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-Template.equipmentdesc.helpers({
-
-   inventory2() {
-    var char = activeCharacter();
-    var inv = inventorydb.find({
-    $and: [
-        { owner: char._id },
-        { activeequip: true }
-    ]
-}).fetch();
-    return inv[0];
-
-   },
-
-   slotItem() {
-var item = slotsdb.find({owner: this._id});
-    return item;
-
-   },
-
-});
-
-Template.equipmentdesc.events({
-  'click .newitem'(){
-      var itemName = prompt("Name?");
-      var slots = prompt("How many slots does " + itemName + " cost?");
-      var itemres = slotMake(this._id,itemName,slots);
-      slotsdb.insert(itemres,{
-      });
-    },
-
-  'click .done'(){
-
-    inventorydb.update(this._id,{
-      $set: {activeequip: false},
-    });
-
-    FlowRouter.go('/Equipment');
-    },
-
-     'click .sideitem'(){
-
-    slotsdb.update(this._id,{
-      $set: {activeSlot: true},
-    });
-    FlowRouter.go('/EquipmentSlot');
-  },
-
-});
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -452,6 +470,10 @@ Template.slotdesc.events({
 
 });
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                lvlup Helpers and Events
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 Template.lvlup.helpers({
 
 levels() {
@@ -472,6 +494,295 @@ Template.lvlup.events({
 
 
 });
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                Extras Helpers and Events
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Template.extras.helpers({
+
+information() {
+  var output;
+  var char = activeCharacter();
+  var cursor = extradb.find({owner: char._id});
+  output = cursor.fetch();
+  // alert(output[0].owner);
+  return output[0];
+
+   },
+
+ammo() {
+  
+  var char = activeCharacter();
+  var output = ammodb.find({owner: char._id});
+  // output = cursor.fetch();
+  //alert(output[0].name);
+  return output;
+
+   },
+
+
+
+});
+
+Template.extras.events({
+
+  'click .newitem'() {
+    var char = activeCharacter();
+    var name = prompt("What is the name of the ammo?");
+    var count = prompt("How many?");
+    if (name == "") {
+      name = "Unknown ammo";
+    }
+    if (count == "") {
+      count = "0";
+    }
+
+    var item = {
+      owner: char._id,
+      name: name,
+      count: count,
+      desc: "No description has been added",
+      active: false,
+    }
+
+    ammodb.insert(item,{});
+
+  },
+
+  'click .item'() {
+      ammodb.update(this._id,{
+          $set: {active: true},
+      });
+      FlowRouter.go('/ammodesc');
+  },
+
+  'change .injections'() {
+     var a = document.getElementById('injections').value;
+     // alert(a);
+     // alert(this.owner);
+     // var answer = extradb.findOne({owner:this._id}).fetch();
+     extradb.update(this._id,{
+      $set: {injections: a},
+     })
+  },
+  'change .vquest'() {
+     var a = document.getElementById('vquest').value;
+     // alert(a);
+     // alert(this.owner);
+     // var answer = extradb.findOne({owner:this._id}).fetch();
+     extradb.update(this._id,{
+      $set: {Vquest: a},
+     })
+  },
+  'change .aura'() {
+     var a = document.getElementById('aura').value;
+     // alert(a);
+     // alert(this.owner);
+     // var answer = extradb.findOne({owner:this._id}).fetch();
+     extradb.update(this._id,{
+      $set: {aura: a},
+     })
+  },
+
+  'change .sj'() {
+     var a = document.getElementById('sj').checked;
+     // alert(this.owner);
+     // var answer = extradb.findOne({owner:this._id}).fetch();
+     extradb.update(this._id,{
+      $set: {specimenJar: a},
+     })
+  },
+  'change .sg'() {
+     var a = document.getElementById('sg').checked;
+     // alert(a);
+     // alert(this.owner);
+     // var answer = extradb.findOne({owner:this._id}).fetch();
+     extradb.update(this._id,{
+      $set: {spiritGuide: a},
+     })
+  },
+   'change .mp'() {
+     var a = document.getElementById('mp').checked;
+     // alert(a);
+     // alert(this.owner);
+     // var answer = extradb.findOne({owner:this._id}).fetch();
+     extradb.update(this._id,{
+      $set: {mutantProf: a},
+     })
+  },
+
+
+});
+
+Template.ammodesc.helpers({
+
+  active() {
+    var act = ammodb.findOne({active:true});
+    return act;
+  },
+
+});
+
+Template.ammodesc.events({
+
+  'click .delete'(){
+    ammodb.remove(this._id);
+    FlowRouter.go('/Extras');
+  },
+
+   'click .done'(){
+    ammodb.update(this._id,{
+      $set: {active:false},
+    });
+    FlowRouter.go('/Extras');
+  },
+  
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                Effects Helpers and Events
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Template.effects.helpers({
+
+  effect() {
+    var output;
+    var char = activeCharacter();
+    var out = effectsdb.find({owner:char._id});
+    // output = out.fetch();
+    return out;
+  },
+
+});
+
+Template.effects.events({
+
+  'click .newitem'() {
+
+    var char = activeCharacter();
+    var name = prompt("Effect Name?");
+    var type = prompt("Type? (mutation,madness,injury,etc)");
+
+    var obj = {
+      owner: char._id,
+      name: name,
+      type: type,
+      desc: "There is no description",
+      active: false,
+    }
+    effectsdb.insert(obj,{});
+  },
+
+    'click .item'() {
+      effectsdb.update(this._id,{
+          $set: {active: true},
+      });
+      FlowRouter.go('/Effectsdesc');
+  },
+
+});
+
+Template.effectsdesc.helpers({
+
+  active() {
+    // var char = activeCharacter();
+    var out = effectsdb.findOne({active:true});
+    return out;
+  },
+
+});
+
+Template.effectsdesc.events({
+
+    'click .delete'(){
+    effectsdb.remove(this._id);
+    FlowRouter.go('/Effects');
+  },
+
+   'click .done'(){
+    effectsdb.update(this._id,{
+      $set: {active:false},
+    });
+    FlowRouter.go('/Effects');
+  },
+  
+});
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                Abilities Helpers and Events
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Template.abilities.helpers({
+
+    ability() {
+    var output;
+    var char = activeCharacter();
+    var out = abilitiesdb.find({owner:char._id});
+    // output = out.fetch();
+    return out;
+  },
+
+
+});
+
+Template.abilities.events({
+
+  'click .newitem'() {
+
+    var char = activeCharacter();
+    var name = prompt("Ability Name?");
+    var type = prompt("Type? (Class,Starting,etc)");
+
+    var obj = {
+      owner: char._id,
+      name: name,
+      type: type,
+      desc: "There is no description",
+      active: false,
+    }
+    abilitiesdb.insert(obj,{});
+  },
+
+      'click .item'() {
+      abilitiesdb.update(this._id,{
+          $set: {active: true},
+      });
+      FlowRouter.go('/abilitiesdesc');
+  },
+  
+});
+
+
+Template.abilitiesdesc.helpers({
+
+   active() {
+    // var char = activeCharacter();
+    var out = abilitiesdb.findOne({active:true});
+    return out;
+  },
+
+});
+
+Template.abilitiesdesc.events({
+   'click .delete'(){
+    abilitiesdb.remove(this._id);
+    FlowRouter.go('/Abilities');
+  },
+
+   'click .done'(){
+    abilitiesdb.update(this._id,{
+      $set: {active:false},
+    });
+    FlowRouter.go('/Abilities');
+  },
+});
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -662,20 +973,30 @@ function countAdjust(sign, val, type) {
    };
 
    function extraSetup(owner) {
-    var extra = {
-      owner: owner,
+    var item = {
+      "owner": owner,
       injections: "none",
       Vquest: "none",
       Sbounty: "none",
       Obounty: "none",
       aura: "none",
       transport: "none",
-      horsseShoes: "none",
+      horseShoes: "none",
       specimenJar: false,
       spiritGuide: false,
       mutantProf: false,
-    };
+    }
 
-    extrasdb.insert(extra,{});
+    extradb.insert(item,{});
 
    };
+
+   function onBackKeyDown() {
+    // Handle the back button
+    var char = activeCharacter();
+    Characters.update({_id:char._id},{
+      $set: {activeChar: false},
+    });
+
+    FlowRouter.go('home');
+}

@@ -29,3 +29,7 @@ fortawesome:fontawesome
 twbs:bootstrap-noglyph
 babrahams:editable-text-wysiwyg-bootstrap-3
 chriswessels:hammer
+jesperwe:bootstrap-select
+mrt:bootstrap-select
+msolters:reactive-select
+ground:db

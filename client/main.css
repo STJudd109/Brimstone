@@ -33,7 +33,7 @@ td {
 
 html {
 	background: url(Background.png) no-repeat center center;
-	background-attachment: relative;
+	background-attachment: fixed;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -44,12 +44,15 @@ html {
   
   font: Helvetica;
   height: 100vh;
+  height: 100%;
   width: 100vw;
+  width: 100%;
 
 }
 body{
   background: transparent;
   height: 100vh;
+  width: 100vw;
  /* margin: 0 auto -155px;*/ /* the bottom margin is the negative value of the footer's height */
 /* margin-bottom: 70px;*/
 }
@@ -110,9 +113,6 @@ height: 20vh;
   box-shadow: 0 0 3px gray;
 }
 
-.round-button-circle:hover {
-  background: rgba(0, 0, 0, 0.5);;
-}
 
 .round-button a {
   display: block;
@@ -157,6 +157,10 @@ height: 20vh;
 	height:50px;
 	width:100%;
 }
+.filler-small {
+  height:25px;
+  width:100%;
+}
 
 .table, tr, td, thead, tbody  {
   background-color: transparent;
@@ -176,6 +180,11 @@ height: 20vh;
 .content-mid {
   /*border: solid black 1px;*/
   height: 75vh;
+  /*overflow-y: scroll;*/
+}
+
+.content-small {
+  height: 20vh;
   overflow-y: scroll;
 }
 
@@ -222,6 +231,29 @@ header{
 .navbar-style{
   width:50%; 
   height:50%;
+}
+
+.plus-button {
+  margin-top: 20px;
+}
+.min-button {
+  margin-top: 20px;
+}
+
+.donebtn{
+
+}
+
+select {
+    border: solid 1px;
+  border-color: rgba(58,60,60,.29);
+  background:#7f7f7f;
+  background:rgba(255,255,255,.29);
+  font-size: 10px;
+  height: 29px;
+  /*padding: 5px;*/
+  /* If you add too much padding here, the options won't show in IE */
+  width: 75%;
 }
 
 

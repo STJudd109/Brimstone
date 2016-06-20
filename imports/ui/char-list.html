@@ -18,7 +18,7 @@
       </div>
       <div class="col-xs-8">
       <h1 class="text-center">Heros</h1>
-      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      <div class="round-button save"><div class="round-button-circle"><a class="round-button">add</a></div></div>
       </div>
       <div class="col-xs-2">
         <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
@@ -197,10 +197,10 @@
         <div class="text">Exp:</div>
         <div class="value data-box">{{exp}}</div>
         </div>
-        <div class="col-xs-2 text-center btn-group">
+        <div class="col-xs-2 text-center">
         <button class="plus-button valexpplus btn-mini">&plus;</button>
         </div>
-        <div class="col-xs-2 text-center btn-group">
+        <div class="col-xs-2 text-center">
         <button class="min-button valexpmin btn-mini">&minus;</button>
         </div>
         
@@ -246,7 +246,7 @@
       </div>
       <div class="col-xs-8">
       <h1 class="text-center">Inventory</h1>
-      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      <div class="round-button "><div class="round-button-circle newitem"><a class="round-button">add</a></div></div>
       </div>
       <div class="col-xs-2">
         <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
@@ -256,7 +256,7 @@
     
     
     <!-- <div class="round-button sidebag pull-left"><div class="round-button-circle"><a class="round-button">Bag</a></div></div> -->
-  <div class="row content-mid-equip">
+  <div class="content-mid-equip">
       <div class="text-center">
           {{#each inventory}}
           {{> inventoryitem}}
@@ -279,9 +279,6 @@
     </div>
     {{> nav}}
     {{/with}}
-    
-    
-  
 </template>
 
 
@@ -292,12 +289,12 @@
 
 <template name="inventoryitem">
 
-<dl class="item sideitem dl-horizontal" >
-<dt class="text "><h4>{{name}}</h4></dt>
+<div class="row item info-box" >
+<div class="col-xs-6"><h4>{{name}}</h4><h5 >{{keys}}</h5></div>
 
-<dd><span class="text">{{keys}}</span></dd>
+<div class="col-xs-6 text-center"><h5>{{> editableText collection="inventory" field="type"}}</h5></div>
 
-<dd class="text">
+<!-- <dd class="text">
 
 <span class="text">Upgrade Slots: {{upgradeSlots}}</span>
 
@@ -305,11 +302,11 @@
 
 <span class="text ">Value: {{value}}</span>
 <button class="delete pull-right">&times;</button>
-</dd>
+</dd> -->
 
-<dd class="text">{{desc}}</dd>
+<!-- <dd class="text">{{desc}}</dd> -->
 
-</dl>
+</div>
 </template>
 
 
@@ -353,6 +350,7 @@
 </div>
 <!-- <button class=" btn done navbar-fixed-bottom">Done</button> -->
 <button class=" btn done">Done</button>
+<button class=" btn delete pull-right">Delete</button>
 </div>
 {{/with}}
 </template>
@@ -374,7 +372,7 @@
       </div>
       <div class="col-xs-8">
       <h1 class="text-center">SideBag</h1>
-      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      <div class="round-button "><div class="round-button-circle newitem"><a class="round-button">add</a></div></div>
       </div>
       <div class="col-xs-2">
         <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
@@ -384,17 +382,22 @@
     <!-- <button class=" btn btn-default newitem">&plus; New Item</button> -->
     <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
     <div class="filler"></div>
-    <div class="row text-center">
+    
     <div class="content-mid-equip">
-      
-      <ul>
+      <div class="row text-center">
           {{#each inventory}}
           {{> sidebagItem}}
           {{/each}}
-      </ul>
+          </div>
       </div>
+      
+      
     </div>
-    </div>
+    <!-- <div class="row">
+      <div class="col-xs-12">
+      <button class="donebtn btn done">Done</button>
+      </div>
+      </div> -->
     {{/with}}
   {{> nav}}
 </div>
@@ -408,15 +411,13 @@
 /////////////////////////////////////////////////////////////////////// -->
 
 <template name="sidebagItem">
-<div class="row ">
-<div class="col-xs-6">
-<dl>
-<dt class="text sideitem">{{name}} <span> ct: {{count}}</span></dt>
+<div class="row info-box item">
+<div class="col-xs-6" >
+<h4 class="text">{{name}} </h4>
   <!-- <dd >{{desc}}</dd> -->
-</dl>
 </div>
 <div class="col-xs-4">
-<button class="btn btn-danger delete">&times;</button>
+<h5> ct: {{count}}</h5>
 </div>
 </div>
 
@@ -450,13 +451,14 @@
 <div class="row text-center">
 <div class="col-xs-12">
 <dl>
-<dt class="text"><h3>{{> editableText collection="sidebag" field="name"}}</h3> <span> ct: {{> editableText collection="sidebag" field="count"}}</span>
-</dt>
-  <dd> Description: {{> editableText collection="sidebag" field="desc"}}</dd>
+<dt ><h3 class="info-box">{{> editableText collection="sidebag" field="name"}}</h3></dt>
+<dd class="info-box"> ct: {{> editableText collection="sidebag" field="count"}}</dd>
+<dd class="info-box"> Description: {{> editableText collection="sidebag" field="desc"}}</dd>
 </dl>
 </div>
 </div>
 <button class=" btn done">Done</button>
+<button class=" btn delete pull-right">Delete</button>
 </div>
 </div>
 {{/with}}
@@ -527,14 +529,52 @@
       </div>
     </header>
   <!-- <div class="filler"></div> -->
-     <div class="content-mid">
-     <!--  {{#each Characters}}
-        {{> charlist}}
-      {{/each}} -->
-      </div>
+     <div class="content-mid-equip">
+     {{#each ability}}
+      
+  <div class="lvl-list row list-transparent item">
+    <div class="col-xs-6 text-center">
+    <h4>
+      {{name}}
+    </h4>
+
+    </div>
+    <div class="col-xs-6 text-center">
+    <h5>
+       {{type}} ability
+    </h5>
+    </div>
+    </div>
+      {{/each}}
+  </div>
 </div>
 </div>
 {{> nav}}
+</template>
+
+<template name="abilitiesdesc">
+{{#with active}}
+<div class="vertical-center ">
+<div class="container">
+ <header class="row">
+      <h1 class="text-center">Abilities Details</h1>
+    </header>
+<!-- <div class="filler"></div> -->
+<div class="row text-center">
+<div class="col-xs-12">
+<dl>
+<dt class="text info-box"><h3>{{> editableText collection="abilities" field="name"}}</h3>
+</dt>
+  <dd class="info-box"> Description: {{> editableText collection="abilities" field="desc"}}</dd>
+  <dd class="info-box"> Type: {{> editableText collection="abilities" field="type"}}</dd>
+</dl>
+</div>
+</div>
+<button class=" btn done">Done</button>
+<button class=" btn delete pull-right">Delete</button>
+</div>
+</div>
+{{/with}}
 </template>
 
 <!-- /////////////////////////////////////////////////////////////////////////
@@ -544,6 +584,7 @@
 <template name="effects">
 <div class="vertical-center">
 <div class="container-fluid">
+
   <header class="row">
       <div class="col-xs-2">
         <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
@@ -558,14 +599,53 @@
       </div>
     </header>
   <!-- <div class="filler"></div> -->
-     <div class="content-mid">
-     <!--  {{#each Characters}}
-        {{> charlist}}
-      {{/each}} -->
+     <div class="content-mid-equip">
+     {{#each effect}}
+      
+  <div class="lvl-list row list-transparent item">
+    <div class="col-xs-6 text-center">
+    <h4>
+      {{name}}
+    </h4>
+
+    </div>
+    <div class="col-xs-6 text-center">
+    <h4>
+       {{type}}
+    </h4>
+    </div>
+  </div>
+      {{/each}}
       </div>
+     
 </div>
 </div>
 {{> nav}}
+</template>
+
+
+<template name="effectsdesc">
+{{#with active}}
+<div class="vertical-center ">
+<div class="container">
+ <header class="row">
+      <h1 class="text-center">Effect Details</h1>
+    </header>
+<!-- <div class="filler"></div> -->
+<div class="row text-center">
+<div class="col-xs-12">
+<dl>
+<dt class="text info-box"><h3>{{> editableText collection="effects" field="name"}}</h3>
+</dt>
+  <dd class="info-box"> Description: {{> editableText collection="effects" field="desc"}}</dd>
+</dl>
+</div>
+</div>
+<button class=" btn done">Done</button>
+<button class=" btn delete pull-right">Delete</button>
+</div>
+</div>
+{{/with}}
 </template>
 
 <!-- /////////////////////////////////////////////////////////////////////////
@@ -575,13 +655,14 @@
 <template name="extras">
 <div class="vertical-center">
 <div class="container-fluid">
+{{#with information}}
   <header class="row">
       <div class="col-xs-2">
         <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
       </div>
       <div class="col-xs-8">
       <h1 class="text-center">Extras</h1>
-      <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div>
+      <!-- <div class="round-button newitem"><div class="round-button-circle"><a class="round-button">add</a></div></div> -->
       </div>
       <div class="col-xs-2">
         <!-- <button class="pull-right btn btn-default sidebag">SideBag</button> -->
@@ -590,13 +671,125 @@
     </header>
   <!-- <div class="filler"></div> -->
   <div class="content-mid">
-     <!--  {{#each Characters}}
-        {{> charlist}}
-      {{/each}} -->
-      </div>
+  
+  <div class="row text-center form-group">
+    <div class="col-xs-6">
+    <h6>Injections</h6>
+      <select class="injections" id="injections">
+        <option>{{injections}}</option>
+        <option>Anti-Venom</option>
+        <option>Void Vapor</option>
+        <option>Dark Stone</option>
+        <option>Starts with S</option>
+      </select>
+    </div>
+    <div class="col-xs-6">
+    <h6>Sheriff's Bounty</h6>
+        <p class="data-box">{{> editableText collection="extra" field="Sbounty"}}</p>
+    </div>
+  </div>
+  <div class="row text-center form-group">
+    <div class="col-xs-6">
+    <h6>Vision Quest</h6>
+      <select class="vquest" id="vquest">
+        <option>{{Vquest}}</option>
+        <option>Snake</option>
+        <option>Eagel</option>
+        <option>Rat</option>
+        <option>Tiger</option>
+        <option>Small child</option>
+        <option>Listerene Packets</option>
+      </select>
+    </div>
+    <div class="col-xs-6">
+    <h6>Outpost bounty</h6>
+        <p class="data-box">{{> editableText collection="extra" field="Obounty"}}</p> 
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-xs-6">
+    <h6>Blessed Aura</h6>
+      <select class="aura" id="aura">
+        <option>{{aura}}</option>
+        <option>Blue</option>
+        <option>African-American</option>
+        <option>Yellow</option>
+        <option>Red</option>
+        <option>Pride colors</option>
+      </select>
+      <h6>Transport</h6>
+      <div class="data-box"><h6>{{> editableText collection="extra" field="transport"}}</h6></div>
+      <h6>horseShoes</h6>
+      <div class="data-box"><h6>{{> editableText collection="extra" field="horseShoes"}}</h6></div>
+    </div>
+    <div class="col-xs-6">
+    <h4>-Ready for Use-</h4>
+    <p>Specimen Jar</p>
+      <input checked="{{specimenJar}}" type="checkbox" class="sj" id="sj">
+      <p>Spirit Guide</p>
+      <input checked="{{spiritGuide}}" type="checkbox" class="sg" id="sg"/>
+      <p>Mutant Prophecy</p>
+      <input checked="{{mutantProf}}" type="checkbox" class="mp" id="mp"/>
+    </div>
+
+  </div>
+  <div class="row text-center">
+  <div class="filler-small"></div>
+  <div class="col-xs-8 content-small">
+  <h5 class="pull-left">Specialty Ammo</h5>
+      {{#each ammo}}
+        {{> ammoitem}}
+      {{/each}}
+  </div>
+  <div class="col-xs-4">
+    <div class="round-button "><div class="round-button-circle newitem"><a class="round-button">Add</a></div></div>
+  </div>
+  </div>
+    </div>
+    {{/with}}
 </div>
 </div>
 {{> nav}}
+</template>
+
+<template name="ammoitem">
+<div class="row text-center item">
+<div class="col-xs-8">
+<dl>
+<dt class="info-box">{{name}} </dt>
+ <!--  <dd >{{desc}}</dd> -->
+</dl>
+</div>
+<div class="col-xs-3 ">
+<p class="info-box">{{count}}</p>
+</div>
+</div>
+
+</template>
+
+<template name="ammodesc">
+{{#with active}}
+<div class="vertical-center ">
+<div class="container">
+ <header class="row">
+      <h1 class="text-center">Ammo Details</h1>
+    </header>
+<!-- <div class="filler"></div> -->
+<div class="row text-center">
+<div class="col-xs-12">
+<dl>
+<dt class="text"><h3>{{> editableText collection="ammo" field="name"}}</h3>
+</dt>
+  <dd> Description: {{> editableText collection="ammo" field="desc"}}</dd>
+  <dd> Quantity: {{count}}</dd>
+</dl>
+</div>
+</div>
+<button class=" btn done">Done</button>
+<button class=" btn delete pull-right">Delete</button>
+</div>
+</div>
+{{/with}}
 </template>
 
 <!-- /////////////////////////////////////////////////////////////////////////
